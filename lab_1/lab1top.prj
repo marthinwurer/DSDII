@@ -1,0 +1,3 @@
+vhdl work "nBitOr.vhd"
+vhdl work "nBitLeftShift.vhd"
+vhdl work "lab1top.vhd"
