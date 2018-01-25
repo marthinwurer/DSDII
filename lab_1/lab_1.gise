@@ -79,10 +79,9 @@
       <outfile xil_pn:name="nBitLeftShift.vhd"/>
       <outfile xil_pn:name="nBitOr.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1516849289" xil_pn:in_ck="6738349766371502957" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3286620494048968334" xil_pn:start_ts="1516849269">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1516921235" xil_pn:in_ck="6738349766371502957" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-4102722289920505288" xil_pn:start_ts="1516921231">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="lab1tb.fdo"/>
     </transform>
     <transform xil_pn:end_ts="1516843034" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1516843034">
       <status xil_pn:value="SuccessfullyRun"/>

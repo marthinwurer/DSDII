@@ -1,0 +1,428 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab1top.twx lab1top.ncd -o lab1top.twr lab1top.pcf
+
+Design file:              lab1top.ncd
+Physical constraint file: lab1top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |AND_Out<0>     |   11.401|
+A<0>           |NOT_Out<0>     |    7.246|
+A<0>           |OR_Out<0>      |   10.573|
+A<0>           |SL_Out<0>      |   11.282|
+A<0>           |SL_Out<1>      |   11.534|
+A<0>           |SL_Out<2>      |   12.337|
+A<0>           |SL_Out<3>      |   11.852|
+A<0>           |SL_Out<4>      |   10.942|
+A<0>           |SL_Out<5>      |   12.081|
+A<0>           |SL_Out<6>      |   12.180|
+A<0>           |SL_Out<7>      |   12.391|
+A<0>           |SL_Out<8>      |   12.398|
+A<0>           |SL_Out<9>      |   11.847|
+A<0>           |SL_Out<10>     |   12.666|
+A<0>           |SL_Out<11>     |   12.818|
+A<0>           |SL_Out<12>     |   11.893|
+A<0>           |SR_Out<0>      |   11.027|
+A<0>           |XOR_Out<0>     |   12.469|
+A<1>           |AND_Out<1>     |   10.882|
+A<1>           |NOT_Out<1>     |    7.444|
+A<1>           |OR_Out<1>      |   11.130|
+A<1>           |SL_Out<1>      |   10.416|
+A<1>           |SL_Out<2>      |   11.433|
+A<1>           |SL_Out<3>      |   11.272|
+A<1>           |SL_Out<4>      |   11.176|
+A<1>           |SL_Out<5>      |   11.177|
+A<1>           |SL_Out<6>      |   11.276|
+A<1>           |SL_Out<7>      |   11.811|
+A<1>           |SL_Out<8>      |   12.051|
+A<1>           |SL_Out<9>      |   11.594|
+A<1>           |SL_Out<10>     |   11.762|
+A<1>           |SL_Out<11>     |   12.238|
+A<1>           |SL_Out<12>     |   12.032|
+A<1>           |SR_Out<0>      |   11.186|
+A<1>           |SR_Out<1>      |   10.957|
+A<1>           |XOR_Out<1>     |   11.838|
+A<2>           |AND_Out<2>     |   11.012|
+A<2>           |NOT_Out<2>     |    7.629|
+A<2>           |OR_Out<2>      |   10.736|
+A<2>           |SL_Out<2>      |   11.609|
+A<2>           |SL_Out<3>      |   12.213|
+A<2>           |SL_Out<4>      |   11.111|
+A<2>           |SL_Out<5>      |   11.623|
+A<2>           |SL_Out<6>      |   11.452|
+A<2>           |SL_Out<7>      |   12.752|
+A<2>           |SL_Out<8>      |   11.986|
+A<2>           |SL_Out<9>      |   11.951|
+A<2>           |SL_Out<10>     |   11.938|
+A<2>           |SL_Out<11>     |   13.179|
+A<2>           |SL_Out<12>     |   11.967|
+A<2>           |SR_Out<0>      |   10.908|
+A<2>           |SR_Out<1>      |   11.469|
+A<2>           |SR_Out<2>      |   12.213|
+A<2>           |XOR_Out<2>     |   11.854|
+A<3>           |AND_Out<3>     |   11.548|
+A<3>           |NOT_Out<3>     |    7.238|
+A<3>           |OR_Out<3>      |   10.236|
+A<3>           |SL_Out<3>      |   11.186|
+A<3>           |SL_Out<4>      |   10.644|
+A<3>           |SL_Out<5>      |   11.264|
+A<3>           |SL_Out<6>      |   11.100|
+A<3>           |SL_Out<7>      |   11.725|
+A<3>           |SL_Out<8>      |   11.519|
+A<3>           |SL_Out<9>      |   11.592|
+A<3>           |SL_Out<10>     |   11.586|
+A<3>           |SL_Out<11>     |   12.152|
+A<3>           |SL_Out<12>     |   11.500|
+A<3>           |SR_Out<0>      |   10.789|
+A<3>           |SR_Out<1>      |   11.237|
+A<3>           |SR_Out<2>      |   12.155|
+A<3>           |SR_Out<3>      |   12.037|
+A<3>           |XOR_Out<3>     |   12.335|
+A<4>           |AND_Out<4>     |   11.218|
+A<4>           |NOT_Out<4>     |    7.389|
+A<4>           |OR_Out<4>      |   10.605|
+A<4>           |SL_Out<4>      |   10.565|
+A<4>           |SL_Out<5>      |   10.739|
+A<4>           |SL_Out<6>      |   10.613|
+A<4>           |SL_Out<7>      |   11.858|
+A<4>           |SL_Out<8>      |   11.440|
+A<4>           |SL_Out<9>      |   11.067|
+A<4>           |SL_Out<10>     |   11.099|
+A<4>           |SL_Out<11>     |   12.285|
+A<4>           |SL_Out<12>     |   11.421|
+A<4>           |SR_Out<0>      |   10.543|
+A<4>           |SR_Out<1>      |   11.310|
+A<4>           |SR_Out<2>      |   11.678|
+A<4>           |SR_Out<3>      |   11.541|
+A<4>           |SR_Out<4>      |   10.699|
+A<4>           |XOR_Out<4>     |   12.059|
+A<5>           |AND_Out<5>     |   10.839|
+A<5>           |NOT_Out<5>     |    7.030|
+A<5>           |OR_Out<5>      |   10.276|
+A<5>           |SL_Out<5>      |   10.838|
+A<5>           |SL_Out<6>      |   10.886|
+A<5>           |SL_Out<7>      |   11.457|
+A<5>           |SL_Out<8>      |   11.236|
+A<5>           |SL_Out<9>      |   11.166|
+A<5>           |SL_Out<10>     |   11.372|
+A<5>           |SL_Out<11>     |   11.884|
+A<5>           |SL_Out<12>     |   11.411|
+A<5>           |SR_Out<0>      |   10.857|
+A<5>           |SR_Out<1>      |   11.206|
+A<5>           |SR_Out<2>      |   11.907|
+A<5>           |SR_Out<3>      |   10.793|
+A<5>           |SR_Out<4>      |   11.013|
+A<5>           |SR_Out<5>      |   11.273|
+A<5>           |XOR_Out<5>     |   11.670|
+A<6>           |AND_Out<6>     |   10.302|
+A<6>           |NOT_Out<6>     |    7.327|
+A<6>           |OR_Out<6>      |   10.369|
+A<6>           |SL_Out<6>      |   10.578|
+A<6>           |SL_Out<7>      |   11.144|
+A<6>           |SL_Out<8>      |   11.033|
+A<6>           |SL_Out<9>      |   11.368|
+A<6>           |SL_Out<10>     |   11.064|
+A<6>           |SL_Out<11>     |   11.571|
+A<6>           |SL_Out<12>     |   11.208|
+A<6>           |SR_Out<0>      |   10.465|
+A<6>           |SR_Out<1>      |   10.620|
+A<6>           |SR_Out<2>      |   11.339|
+A<6>           |SR_Out<3>      |   10.227|
+A<6>           |SR_Out<4>      |   10.621|
+A<6>           |SR_Out<5>      |   10.687|
+A<6>           |SR_Out<6>      |   10.821|
+A<6>           |XOR_Out<6>     |   11.446|
+A<7>           |AND_Out<7>     |   11.057|
+A<7>           |NOT_Out<7>     |    7.023|
+A<7>           |OR_Out<7>      |   10.840|
+A<7>           |SL_Out<7>      |   11.438|
+A<7>           |SL_Out<8>      |   11.568|
+A<7>           |SL_Out<9>      |   11.883|
+A<7>           |SL_Out<10>     |   11.355|
+A<7>           |SL_Out<11>     |   11.865|
+A<7>           |SL_Out<12>     |   11.743|
+A<7>           |SR_Out<0>      |   10.728|
+A<7>           |SR_Out<1>      |   10.757|
+A<7>           |SR_Out<2>      |   11.230|
+A<7>           |SR_Out<3>      |   10.595|
+A<7>           |SR_Out<4>      |   10.884|
+A<7>           |SR_Out<5>      |   10.824|
+A<7>           |SR_Out<6>      |   10.712|
+A<7>           |SR_Out<7>      |   10.594|
+A<7>           |XOR_Out<7>     |   11.834|
+A<8>           |AND_Out<8>     |   11.171|
+A<8>           |NOT_Out<8>     |    7.628|
+A<8>           |OR_Out<8>      |   10.617|
+A<8>           |SL_Out<8>      |   11.067|
+A<8>           |SL_Out<9>      |   11.938|
+A<8>           |SL_Out<10>     |   10.869|
+A<8>           |SL_Out<11>     |   11.994|
+A<8>           |SL_Out<12>     |   11.242|
+A<8>           |SR_Out<0>      |   11.363|
+A<8>           |SR_Out<1>      |   10.795|
+A<8>           |SR_Out<2>      |   11.278|
+A<8>           |SR_Out<3>      |   10.176|
+A<8>           |SR_Out<4>      |   11.249|
+A<8>           |SR_Out<5>      |   10.862|
+A<8>           |SR_Out<6>      |   10.760|
+A<8>           |SR_Out<7>      |   10.175|
+A<8>           |SR_Out<8>      |   10.541|
+A<8>           |XOR_Out<8>     |   11.251|
+A<9>           |AND_Out<9>     |   11.200|
+A<9>           |NOT_Out<9>     |    7.661|
+A<9>           |OR_Out<9>      |   11.376|
+A<9>           |SL_Out<9>      |   12.285|
+A<9>           |SL_Out<10>     |   10.955|
+A<9>           |SL_Out<11>     |   12.044|
+A<9>           |SL_Out<12>     |   11.025|
+A<9>           |SR_Out<0>      |   11.473|
+A<9>           |SR_Out<1>      |   11.251|
+A<9>           |SR_Out<2>      |   11.702|
+A<9>           |SR_Out<3>      |   10.666|
+A<9>           |SR_Out<4>      |   11.359|
+A<9>           |SR_Out<5>      |   11.318|
+A<9>           |SR_Out<6>      |   11.184|
+A<9>           |SR_Out<7>      |   10.665|
+A<9>           |SR_Out<8>      |   10.651|
+A<9>           |SR_Out<9>      |   10.592|
+A<9>           |XOR_Out<9>     |   11.129|
+A<10>          |AND_Out<10>    |   10.958|
+A<10>          |NOT_Out<10>    |    7.567|
+A<10>          |OR_Out<10>     |   10.704|
+A<10>          |SL_Out<10>     |   11.010|
+A<10>          |SL_Out<11>     |   11.253|
+A<10>          |SL_Out<12>     |   11.222|
+A<10>          |SR_Out<0>      |   11.445|
+A<10>          |SR_Out<1>      |   11.013|
+A<10>          |SR_Out<2>      |   11.567|
+A<10>          |SR_Out<3>      |   10.487|
+A<10>          |SR_Out<4>      |   11.331|
+A<10>          |SR_Out<5>      |   11.080|
+A<10>          |SR_Out<6>      |   11.049|
+A<10>          |SR_Out<7>      |   10.486|
+A<10>          |SR_Out<8>      |   10.623|
+A<10>          |SR_Out<9>      |   10.354|
+A<10>          |SR_Out<10>     |   10.758|
+A<10>          |XOR_Out<10>    |   11.122|
+A<11>          |AND_Out<11>    |   11.384|
+A<11>          |NOT_Out<11>    |    7.399|
+A<11>          |OR_Out<11>     |   10.799|
+A<11>          |SL_Out<11>     |   11.459|
+A<11>          |SL_Out<12>     |   11.240|
+A<11>          |SR_Out<0>      |   11.502|
+A<11>          |SR_Out<1>      |   11.321|
+A<11>          |SR_Out<2>      |   11.635|
+A<11>          |SR_Out<3>      |   11.068|
+A<11>          |SR_Out<4>      |   11.388|
+A<11>          |SR_Out<5>      |   11.388|
+A<11>          |SR_Out<6>      |   11.117|
+A<11>          |SR_Out<7>      |   10.772|
+A<11>          |SR_Out<8>      |   10.680|
+A<11>          |SR_Out<9>      |   10.662|
+A<11>          |SR_Out<10>     |   10.826|
+A<11>          |SR_Out<11>     |    9.802|
+A<11>          |XOR_Out<11>    |   11.311|
+A<12>          |AND_Out<12>    |   11.229|
+A<12>          |NOT_Out<12>    |    8.227|
+A<12>          |OR_Out<12>     |   10.933|
+A<12>          |SL_Out<12>     |   11.191|
+A<12>          |SR_Out<0>      |   10.227|
+A<12>          |SR_Out<1>      |   11.158|
+A<12>          |SR_Out<2>      |   11.341|
+A<12>          |SR_Out<3>      |   10.837|
+A<12>          |SR_Out<4>      |   10.854|
+A<12>          |SR_Out<5>      |   11.225|
+A<12>          |SR_Out<6>      |   10.823|
+A<12>          |SR_Out<7>      |   10.478|
+A<12>          |SR_Out<8>      |   10.130|
+A<12>          |SR_Out<9>      |   10.499|
+A<12>          |SR_Out<10>     |   10.532|
+A<12>          |SR_Out<11>     |    9.867|
+A<12>          |SR_Out<12>     |    9.540|
+A<12>          |XOR_Out<12>    |   10.393|
+B<0>           |AND_Out<0>     |   10.571|
+B<0>           |OR_Out<0>      |   11.753|
+B<0>           |SL_Out<0>      |    9.719|
+B<0>           |SL_Out<1>      |    9.809|
+B<0>           |SL_Out<2>      |   10.769|
+B<0>           |SL_Out<3>      |   10.763|
+B<0>           |SL_Out<4>      |   10.232|
+B<0>           |SL_Out<5>      |   10.513|
+B<0>           |SL_Out<6>      |   10.642|
+B<0>           |SL_Out<7>      |   11.302|
+B<0>           |SL_Out<8>      |   11.107|
+B<0>           |SL_Out<9>      |   11.551|
+B<0>           |SL_Out<10>     |   11.300|
+B<0>           |SL_Out<11>     |   11.824|
+B<0>           |SL_Out<12>     |   11.192|
+B<0>           |SR_Out<0>      |   11.458|
+B<0>           |SR_Out<1>      |   11.301|
+B<0>           |SR_Out<2>      |   11.906|
+B<0>           |SR_Out<3>      |   11.352|
+B<0>           |SR_Out<4>      |   11.344|
+B<0>           |SR_Out<5>      |   11.084|
+B<0>           |SR_Out<6>      |   11.388|
+B<0>           |SR_Out<7>      |   11.043|
+B<0>           |SR_Out<8>      |   10.636|
+B<0>           |SR_Out<9>      |   10.358|
+B<0>           |SR_Out<10>     |   11.097|
+B<0>           |SR_Out<11>     |    9.708|
+B<0>           |SR_Out<12>     |    9.864|
+B<0>           |XOR_Out<0>     |   11.639|
+B<1>           |AND_Out<1>     |   10.509|
+B<1>           |OR_Out<1>      |   11.109|
+B<1>           |SL_Out<0>      |    9.950|
+B<1>           |SL_Out<1>      |   10.170|
+B<1>           |SL_Out<2>      |   11.041|
+B<1>           |SL_Out<3>      |   10.574|
+B<1>           |SL_Out<4>      |   10.166|
+B<1>           |SL_Out<5>      |   10.892|
+B<1>           |SL_Out<6>      |   10.884|
+B<1>           |SL_Out<7>      |   11.242|
+B<1>           |SL_Out<8>      |   11.728|
+B<1>           |SL_Out<9>      |   11.512|
+B<1>           |SL_Out<10>     |   11.370|
+B<1>           |SL_Out<11>     |   12.195|
+B<1>           |SL_Out<12>     |   11.903|
+B<1>           |SR_Out<0>      |   11.242|
+B<1>           |SR_Out<1>      |   11.197|
+B<1>           |SR_Out<2>      |   11.873|
+B<1>           |SR_Out<3>      |   11.265|
+B<1>           |SR_Out<4>      |   11.266|
+B<1>           |SR_Out<5>      |   11.213|
+B<1>           |SR_Out<6>      |   11.193|
+B<1>           |SR_Out<7>      |   10.690|
+B<1>           |SR_Out<8>      |   10.420|
+B<1>           |SR_Out<9>      |   10.487|
+B<1>           |SR_Out<10>     |   10.902|
+B<1>           |SR_Out<11>     |   10.316|
+B<1>           |SR_Out<12>     |    9.769|
+B<1>           |XOR_Out<1>     |   11.465|
+B<2>           |AND_Out<2>     |   10.465|
+B<2>           |OR_Out<2>      |   10.746|
+B<2>           |SL_Out<0>      |    9.922|
+B<2>           |SL_Out<1>      |   10.437|
+B<2>           |SL_Out<2>      |   10.041|
+B<2>           |SL_Out<3>      |   10.147|
+B<2>           |SL_Out<4>      |    9.935|
+B<2>           |SL_Out<5>      |    9.918|
+B<2>           |SL_Out<6>      |   10.063|
+B<2>           |SL_Out<7>      |   10.043|
+B<2>           |SL_Out<8>      |   10.736|
+B<2>           |SL_Out<9>      |   10.501|
+B<2>           |SL_Out<10>     |   10.549|
+B<2>           |SL_Out<11>     |   10.470|
+B<2>           |SL_Out<12>     |   10.260|
+B<2>           |SR_Out<0>      |   10.149|
+B<2>           |SR_Out<1>      |   10.221|
+B<2>           |SR_Out<2>      |   10.606|
+B<2>           |SR_Out<3>      |    9.656|
+B<2>           |SR_Out<4>      |    9.995|
+B<2>           |SR_Out<5>      |   10.288|
+B<2>           |SR_Out<6>      |   10.088|
+B<2>           |SR_Out<7>      |    9.833|
+B<2>           |SR_Out<8>      |    9.853|
+B<2>           |SR_Out<9>      |    9.566|
+B<2>           |SR_Out<10>     |    9.618|
+B<2>           |SR_Out<11>     |    9.853|
+B<2>           |SR_Out<12>     |    9.603|
+B<2>           |XOR_Out<2>     |   11.307|
+B<3>           |AND_Out<3>     |   10.803|
+B<3>           |OR_Out<3>      |   11.230|
+B<3>           |SL_Out<0>      |   10.398|
+B<3>           |SL_Out<1>      |   10.542|
+B<3>           |SL_Out<2>      |   10.244|
+B<3>           |SL_Out<3>      |   10.350|
+B<3>           |SL_Out<4>      |   10.085|
+B<3>           |SL_Out<5>      |   10.623|
+B<3>           |SL_Out<6>      |   10.242|
+B<3>           |SL_Out<7>      |   10.619|
+B<3>           |SL_Out<8>      |   10.825|
+B<3>           |SL_Out<9>      |   11.642|
+B<3>           |SL_Out<10>     |   10.728|
+B<3>           |SL_Out<11>     |   11.046|
+B<3>           |SL_Out<12>     |   11.009|
+B<3>           |SR_Out<0>      |   10.324|
+B<3>           |SR_Out<1>      |   10.718|
+B<3>           |SR_Out<2>      |   11.205|
+B<3>           |SR_Out<3>      |   10.968|
+B<3>           |SR_Out<4>      |   10.529|
+B<3>           |SR_Out<5>      |   10.785|
+B<3>           |SR_Out<6>      |   10.687|
+B<3>           |SR_Out<7>      |   10.596|
+B<3>           |SR_Out<8>      |   10.490|
+B<3>           |SR_Out<9>      |   10.070|
+B<3>           |SR_Out<10>     |   10.122|
+B<3>           |SR_Out<11>     |    9.981|
+B<3>           |SR_Out<12>     |   10.289|
+B<3>           |XOR_Out<3>     |   11.590|
+B<4>           |AND_Out<4>     |   10.392|
+B<4>           |OR_Out<4>      |   10.657|
+B<4>           |XOR_Out<4>     |   11.233|
+B<5>           |AND_Out<5>     |   10.526|
+B<5>           |OR_Out<5>      |   10.217|
+B<5>           |XOR_Out<5>     |   11.357|
+B<6>           |AND_Out<6>     |   10.345|
+B<6>           |OR_Out<6>      |   10.790|
+B<6>           |XOR_Out<6>     |   11.489|
+B<7>           |AND_Out<7>     |   11.019|
+B<7>           |OR_Out<7>      |   10.919|
+B<7>           |XOR_Out<7>     |   11.796|
+B<8>           |AND_Out<8>     |   11.004|
+B<8>           |OR_Out<8>      |   10.477|
+B<8>           |XOR_Out<8>     |   11.084|
+B<9>           |AND_Out<9>     |   11.212|
+B<9>           |OR_Out<9>      |   11.162|
+B<9>           |XOR_Out<9>     |   11.141|
+B<10>          |AND_Out<10>    |   10.725|
+B<10>          |OR_Out<10>     |   10.859|
+B<10>          |XOR_Out<10>    |   10.889|
+B<11>          |AND_Out<11>    |   11.352|
+B<11>          |OR_Out<11>     |   10.567|
+B<11>          |XOR_Out<11>    |   11.279|
+B<12>          |AND_Out<12>    |   11.450|
+B<12>          |OR_Out<12>     |   11.326|
+B<12>          |XOR_Out<12>    |   10.614|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jan 25 18:34:35 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 218 MB
+
+
+
