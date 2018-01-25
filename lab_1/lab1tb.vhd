@@ -34,26 +34,34 @@ ARCHITECTURE behavior OF lab1tb IS
 	constant N       : integer                          := 13;
 	signal A , B     : std_logic_vector (N -1 downto 0) := ( others => '0') ;
 signal or_output : std_logic_vector ( N -1 downto 0) ;
+signal and_output : std_logic_vector ( N -1 downto 0) ;
+signal xor_output : std_logic_vector ( N -1 downto 0) ;
+signal not_output : std_logic_vector ( N -1 downto 0) ;
 signal sl_output : std_logic_vector ( N -1 downto 0) ;
+signal sr_output : std_logic_vector ( N -1 downto 0) ;
 BEGIN
 	uut : entity work . lab1top
-generic map ( N => N )
-port map ( A => A , B => B ,
-or_output => or_output ,
-sl_output => sl_output ) ;
-stim_proc : process
-begin
-	-- the limits for i and j are good for testing the or and shift_left
-	-- values can be modified as necessary to test other functions
-	for i in 8 to 13 loop
-		for j in 2 to 8 loop
-			A <= std_logic_vector ( to_unsigned (i , N ) ) ;
-			B <= std_logic_vector ( to_unsigned (j , N ) ) ;
-			wait for 100 ns ;
+	generic map ( N => N )
+	port map ( A => A , B => B ,
+			OR_Out => or_output ,
+			AND_Out => and_output,
+			XOR_Out => xor_output,
+			NOT_Out => not_output,
+			SL_Out => sl_output, 
+			SR_Out => sr_output) ;
+	stim_proc : process
+	begin
+		-- the limits for i and j are good for testing the or and shift_left
+		-- values can be modified as necessary to test other functions
+		for i in 8 to 13 loop
+			for j in 2 to 8 loop
+				A <= std_logic_vector ( to_unsigned (i , N ) ) ;
+				B <= std_logic_vector ( to_unsigned (j , N ) ) ;
+				wait for 100 ns ;
+			end loop ;
 		end loop ;
-	end loop ;
-	wait ;
-end process ;
+		wait ;
+	end process ;
 end;
 
 

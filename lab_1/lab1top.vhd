@@ -33,16 +33,32 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity lab1top is
 	generic ( N : integer := 13) ;
 	port (A , B : in std_logic_vector ( N -1 downto 0) ;
-			or_output : out std_logic_vector ( N -1 downto 0) ;
-			sl_output : out std_logic_vector ( N -1 downto 0) ) ;
+			OR_Out : out std_logic_vector ( N -1 downto 0) ;
+			AND_Out : out std_logic_vector ( N -1 downto 0) ;
+			XOR_Out : out std_logic_vector ( N -1 downto 0) ;
+			NOT_Out : out std_logic_vector ( N -1 downto 0) ;
+			SL_Out : out std_logic_vector ( N -1 downto 0) ;
+			SR_Out : out std_logic_vector ( N -1 downto 0) ) ;
 end lab1top ;
 architecture Structural of lab1top is
 begin
 	nBitOr0 : entity work.nBitOr
 		generic map ( N => N )
-		port map ( A => A , B => B , Y => or_output ) ;
+		port map ( A => A , B => B , Y => OR_Out ) ;
+	nBitAnd0 : entity work.nBitAnd
+		generic map ( N => N )
+		port map ( A => A , B => B , Y => AND_Out ) ;
+	nBitXor0 : entity work.nBitXor
+		generic map ( N => N )
+		port map ( A => A , B => B , Y => XOR_Out ) ;
+	nBitNot0 : entity work.nBitNot
+		generic map ( N => N )
+		port map ( A => A, Y => NOT_Out ) ;
 	nBitLeftShift_0 : entity work.nBitLeftShift
 		generic map ( N => N )
-		port map ( A => A , B => B , Y => sl_output ) ;
+		port map ( A => A , B => B , Y => SL_Out ) ;
+	nBitRightShift_0 : entity work.nBitRightShift
+		generic map ( N => N )
+		port map ( A => A , B => B , Y => SR_Out ) ;
 end Structural;
 

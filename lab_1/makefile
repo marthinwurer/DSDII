@@ -11,7 +11,7 @@ GHDLRUNFLAGS= --vcd=$1.vcd
 all: lab1tb
 
 # Elaboration target
-lab1tb: /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o /usr/local/lib/ghdl/v93/ieee/std_logic_1164_body.o /usr/local/lib/ghdl/v93/ieee/numeric_std.o /usr/local/lib/ghdl/v93/ieee/numeric_std-body.o work/nBitOr.o work/nBitLeftShift.o work/lab1top.o work/lab1tb.o
+lab1tb: /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o /usr/local/lib/ghdl/v93/ieee/std_logic_1164_body.o /usr/local/lib/ghdl/v93/ieee/numeric_std.o /usr/local/lib/ghdl/v93/ieee/numeric_std-body.o work/nBitOr.o work/nBitAnd.o work/nBitXor.o work/nBitNot.o work/nBitLeftShift.o work/nBitRightShift.o work/lab1top.o work/lab1tb.o
 	$(GHDL) -e $(GHDLFLAGS) $@
 
 # Run target
@@ -33,7 +33,15 @@ run: lab1tb
 	exit 1
 work/nBitOr.o: nBitOr.vhd
 	$(GHDL) -a $(GHDLFLAGS) $<
+work/nBitAnd.o: nBitAnd.vhd
+	$(GHDL) -a $(GHDLFLAGS) $<
+work/nBitXor.o: nBitXor.vhd
+	$(GHDL) -a $(GHDLFLAGS) $<
+work/nBitNot.o: nBitNot.vhd
+	$(GHDL) -a $(GHDLFLAGS) $<
 work/nBitLeftShift.o: nBitLeftShift.vhd
+	$(GHDL) -a $(GHDLFLAGS) $<
+work/nBitRightShift.o: nBitRightShift.vhd
 	$(GHDL) -a $(GHDLFLAGS) $<
 work/lab1top.o: lab1top.vhd
 	$(GHDL) -a $(GHDLFLAGS) $<
@@ -46,6 +54,10 @@ work/lab1tb.o: lab1tb.vhd
 /usr/local/lib/ghdl/v93/ieee/numeric_std.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o
 /usr/local/lib/ghdl/v93/ieee/numeric_std-body.o:  /usr/local/lib/ghdl/v93/ieee/numeric_std.o
 work/nBitOr.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o
+work/nBitAnd.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o
+work/nBitXor.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o
+work/nBitNot.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o
 work/nBitLeftShift.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o /usr/local/lib/ghdl/v93/ieee/numeric_std.o
-work/lab1top.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o work/nBitOr.o work/nBitLeftShift.o
+work/nBitRightShift.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o /usr/local/lib/ghdl/v93/ieee/numeric_std.o
+work/lab1top.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o work/nBitOr.o work/nBitAnd.o work/nBitXor.o work/nBitNot.o work/nBitLeftShift.o work/nBitRightShift.o
 work/lab1tb.o:  /usr/local/lib/ghdl/v93/ieee/std_logic_1164.o /usr/local/lib/ghdl/v93/ieee/std_logic_1164_body.o /usr/local/lib/ghdl/v93/ieee/numeric_std.o /usr/local/lib/ghdl/v93/ieee/numeric_std-body.o work/lab1top.o
