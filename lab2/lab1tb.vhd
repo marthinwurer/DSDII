@@ -28,10 +28,12 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
+use work.so_eddgy.ALL;
+
+
 ENTITY lab1tb IS
 END lab1tb;
 ARCHITECTURE behavior OF lab1tb IS
-	constant N       : integer                          := 13;
 	signal A , B     : std_logic_vector (N -1 downto 0) := ( others => '0') ;
 signal or_output : std_logic_vector ( N -1 downto 0) ;
 signal and_output : std_logic_vector ( N -1 downto 0) ;
@@ -41,7 +43,7 @@ signal sl_output : std_logic_vector ( N -1 downto 0) ;
 signal sr_output : std_logic_vector ( N -1 downto 0) ;
 BEGIN
 	uut : entity work . lab1top
-	generic map ( N => N )
+	--generic map ( N => N )
 	port map ( A => A , B => B ,
 			OR_Out => or_output ,
 			AND_Out => and_output,

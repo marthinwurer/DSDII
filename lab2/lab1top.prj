@@ -1,3 +1,4 @@
+vhdl work "so_eddgy.vhd"
 vhdl work "nBitXor.vhd"
 vhdl work "nBitRightShift.vhd"
 vhdl work "nBitOr.vhd"

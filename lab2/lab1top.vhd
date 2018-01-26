@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.so_eddgy.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -31,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Entity declaration
 entity lab1top is
-	generic ( N : integer := 13) ;
+	-------=------generic ( N : integer := 13) ;
 	port (A , B : in std_logic_vector ( N -1 downto 0) ;
 			OR_Out : out std_logic_vector ( N -1 downto 0) ;
 			AND_Out : out std_logic_vector ( N -1 downto 0) ;

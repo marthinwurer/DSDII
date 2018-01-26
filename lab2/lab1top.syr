@@ -105,6 +105,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\so_eddgy.vhd" into library work
+Parsing package <so_eddgy>.
+Parsing package body <so_eddgy>.
 Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\nBitXor.vhd" into library work
 Parsing entity <nBitXor>.
 Parsing architecture <Dataflow> of entity <nbitxor>.
@@ -131,7 +134,7 @@ Parsing architecture <Structural> of entity <lab1top>.
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <lab1top> (architecture <Structural>) with generics from library <work>.
+Elaborating entity <lab1top> (architecture <Structural>) from library <work>.
 
 Elaborating entity <nBitOr> (architecture <Dataflow>) with generics from library <work>.
 
@@ -151,52 +154,51 @@ Elaborating entity <nBitRightShift> (architecture <struct>) with generics from l
 
 Synthesizing Unit <lab1top>.
     Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\lab1top.vhd".
-        N = 13
     Summary:
 	no macro.
 Unit <lab1top> synthesized.
 
 Synthesizing Unit <nBitOr>.
     Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitOr.vhd".
-        n = 13
+        n = 4
     Summary:
 	no macro.
 Unit <nBitOr> synthesized.
 
 Synthesizing Unit <nBitAnd>.
     Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitAnd.vhd".
-        n = 13
+        n = 4
     Summary:
 	no macro.
 Unit <nBitAnd> synthesized.
 
 Synthesizing Unit <nBitXor>.
     Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitXor.vhd".
-        n = 13
+        n = 4
     Summary:
 Unit <nBitXor> synthesized.
 
 Synthesizing Unit <nBitNot>.
     Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitNot.vhd".
-        n = 13
+        n = 4
     Summary:
 	no macro.
 Unit <nBitNot> synthesized.
 
 Synthesizing Unit <nBitLeftShift>.
     Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitLeftShift.vhd".
-        n = 13
-WARNING:Xst:647 - Input <B<12:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 13-bit 13-to-1 multiplexer for signal <Y> created at line 53.
+        n = 4
+WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit 4-to-1 multiplexer for signal <Y> created at line 53.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <nBitLeftShift> synthesized.
 
 Synthesizing Unit <nBitRightShift>.
     Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitRightShift.vhd".
-        n = 13
-WARNING:Xst:647 - Input <B<12:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 13-bit 13-to-1 multiplexer for signal <Y> created at line 53.
+        n = 4
+WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit 4-to-1 multiplexer for signal <Y> created at line 53.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <nBitRightShift> synthesized.
@@ -206,9 +208,9 @@ HDL Synthesis Report
 
 Macro Statistics
 # Multiplexers                                         : 2
- 13-bit 13-to-1 multiplexer                            : 2
+ 4-bit 4-to-1 multiplexer                              : 2
 # Xors                                                 : 1
- 13-bit xor2                                           : 1
+ 4-bit xor2                                            : 1
 
 =========================================================================
 
@@ -222,9 +224,9 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Multiplexers                                         : 2
- 13-bit 13-to-1 multiplexer                            : 2
+ 4-bit 4-to-1 multiplexer                              : 2
 # Xors                                                 : 1
- 13-bit xor2                                           : 1
+ 4-bit xor2                                            : 1
 
 =========================================================================
 
@@ -236,7 +238,7 @@ Optimizing unit <lab1top> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block lab1top, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block lab1top, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -265,16 +267,16 @@ Top Level Output File Name         : lab1top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 108
-#      INV                         : 13
-#      LUT2                        : 41
-#      LUT3                        : 8
-#      LUT4                        : 4
-#      LUT5                        : 14
-#      LUT6                        : 28
-# IO Buffers                       : 104
-#      IBUF                        : 26
-#      OBUF                        : 78
+# BELS                             : 24
+#      INV                         : 4
+#      LUT2                        : 12
+#      LUT3                        : 2
+#      LUT4                        : 2
+#      LUT5                        : 2
+#      LUT6                        : 2
+# IO Buffers                       : 32
+#      IBUF                        : 8
+#      OBUF                        : 24
 
 Device utilization summary:
 ---------------------------
@@ -283,19 +285,19 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                  108  out of   9112     1%  
-    Number used as Logic:               108  out of   9112     1%  
+ Number of Slice LUTs:                   24  out of   9112     0%  
+    Number used as Logic:                24  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    108
-   Number with an unused Flip Flop:     108  out of    108   100%  
-   Number with an unused LUT:             0  out of    108     0%  
-   Number of fully used LUT-FF pairs:     0  out of    108     0%  
+ Number of LUT Flip Flop pairs used:     24
+   Number with an unused Flip Flop:      24  out of     24   100%  
+   Number with an unused LUT:             0  out of     24     0%  
+   Number of fully used LUT-FF pairs:     0  out of     24     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                         104
- Number of bonded IOBs:                 104  out of    232    44%  
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    232    13%  
 
 Specific Feature Utilization:
 
@@ -330,7 +332,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 8.011ns
+   Maximum combinational path delay: 5.822ns
 
 Timing Details:
 ---------------
@@ -338,24 +340,22 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 439 / 78
+  Total number of paths / destination ports: 64 / 24
 -------------------------------------------------------------------------
-Delay:               8.011ns (Levels of Logic = 5)
-  Source:            B<0> (PAD)
-  Destination:       SL_Out<9> (PAD)
+Delay:               5.822ns (Levels of Logic = 3)
+  Source:            B<1> (PAD)
+  Destination:       SL_Out<3> (PAD)
 
-  Data Path: B<0> to SL_Out<9>
+  Data Path: B<1> to SL_Out<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.222   1.620  B_0_IBUF (B_0_IBUF)
-     LUT3:I0->O            1   0.205   0.580  B<0>51 (B<0>_mmx_out4)
-     LUT6:I5->O            1   0.205   0.827  nBitRightShift_0/Mmux_Y91 (nBitRightShift_0/Mmux_Y9)
-     LUT5:I1->O            1   0.203   0.579  nBitRightShift_0/Mmux_Y93 (SR_Out_3_OBUF)
-     OBUF:I->O                 2.571          SR_Out_3_OBUF (SR_Out<3>)
+     IBUF:I->O            11   1.222   1.247  B_1_IBUF (B_1_IBUF)
+     LUT6:I0->O            1   0.203   0.579  SR_Out<0>1 (SR_Out_0_OBUF)
+     OBUF:I->O                 2.571          SR_Out_0_OBUF (SR_Out<0>)
     ----------------------------------------
-    Total                      8.011ns (4.406ns logic, 3.605ns route)
-                                       (55.0% logic, 45.0% route)
+    Total                      5.822ns (3.996ns logic, 1.826ns route)
+                                       (68.6% logic, 31.4% route)
 
 =========================================================================
 
@@ -366,11 +366,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.48 secs
+Total CPU time to Xst completion: 4.21 secs
  
 --> 
 
-Total memory usage is 259868 kilobytes
+Total memory usage is 259676 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)
