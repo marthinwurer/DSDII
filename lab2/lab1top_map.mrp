@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.7 Map P.20131013 (lin64)
 Xilinx Mapping Report File for Design 'lab1top'
 
 Design Information
@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Jan 25 19:25:39 2018
+Mapped Date    : Thu Jan 25 22:47:17 2018
 
 Design Summary
 --------------
@@ -27,7 +27,7 @@ Slice Logic Utilization:
     Number used as Memory:                       0 out of   2,176    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     8 out of   2,278    1%
+  Number of occupied Slices:                     7 out of   2,278    1%
   Number of MUXCYs used:                         0 out of   4,556    0%
   Number of LUT Flip Flop pairs used:           11
     Number with an unused Flip Flop:            11 out of      11  100%
@@ -71,9 +71,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.32
 
-Peak Memory Usage:  406 MB
-Total REAL time to MAP completion:  6 secs 
-Total CPU time to MAP completion:   4 secs 
+Peak Memory Usage:  665 MB
+Total REAL time to MAP completion:  7 secs 
+Total CPU time to MAP completion:   7 secs 
 
 Table of Contents
 -----------------
@@ -96,21 +96,9 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:Security:43 - No license file was found in the standard Xilinx license
-directory.
-WARNING:Security:44 - Since no license file was found,
-WARNING:Security:42 - Your license support version '2018.01' for ISE expires in
-6 days after which you will not qualify for Xilinx software updates or new
-releases.
 
 Section 3 - Informational
 -------------------------
-INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
-INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
-'1700@klein.ce.rit.edu;1717@klein.ce.rit.edu;2100@klein.ce.rit.edu;1818@klein.ce
-.rit.edu;27000@klein.ce.rit.edu;27001@klein.ce.rit.edu;5280@kgcoe-license.main.a
-d.rit.edu'.
-INFO:Security:54 - 'xc6slx16' is a WebPack part.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs

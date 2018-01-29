@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=C:\Users\bhm3791\Documents\DSDII\lab2\impact.xsl
-OUTFILE=C:\Users\bhm3791\Documents\DSDII\lab2\impact.xsl
+INFILE=/home/benjamin/Documents/classes/DSD1/lab2/impact.xsl
+OUTFILE=/home/benjamin/Documents/classes/DSD1/lab2/impact.xsl
 FAMILY=Single
 PART=Single
-WORKINGDIR=C:\Users\bhm3791\Documents\DSDII\lab2
+WORKINGDIR=/home/benjamin/Documents/classes/DSD1/lab2
 LICENSE=iMPACT
 USER_INFO=iMPACT

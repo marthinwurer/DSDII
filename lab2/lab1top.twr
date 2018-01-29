@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.7 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
--n 3 -fastpaths -xml lab1top.twx lab1top.ncd -o lab1top.twr lab1top.pcf -ucf
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml lab1top.twx lab1top.ncd -o lab1top.twr lab1top.pcf -ucf
 lab1top.ucf
 
 Design file:              lab1top.ncd
@@ -36,81 +36,81 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A<0>           |AND_Out<0>     |    6.384|
-A<0>           |NOT_Out<0>     |    5.966|
-A<0>           |OR_Out<0>      |    6.761|
-A<0>           |SL_Out<0>      |    7.176|
-A<0>           |SL_Out<1>      |    7.574|
-A<0>           |SL_Out<2>      |    7.456|
-A<0>           |SL_Out<3>      |    7.324|
-A<0>           |SR_Out<0>      |    6.772|
-A<0>           |XOR_Out<0>     |    7.553|
-A<1>           |AND_Out<1>     |    6.672|
-A<1>           |NOT_Out<1>     |    6.106|
-A<1>           |OR_Out<1>      |    7.027|
-A<1>           |SL_Out<1>      |    7.512|
-A<1>           |SL_Out<2>      |    7.394|
-A<1>           |SL_Out<3>      |    7.522|
-A<1>           |SR_Out<0>      |    7.296|
-A<1>           |SR_Out<1>      |    7.384|
-A<1>           |XOR_Out<1>     |    6.573|
-A<2>           |AND_Out<2>     |    6.134|
-A<2>           |NOT_Out<2>     |    5.694|
-A<2>           |OR_Out<2>      |    7.212|
-A<2>           |SL_Out<2>      |    7.299|
-A<2>           |SL_Out<3>      |    6.845|
-A<2>           |SR_Out<0>      |    6.933|
-A<2>           |SR_Out<1>      |    6.952|
-A<2>           |SR_Out<2>      |    7.056|
-A<2>           |XOR_Out<2>     |    6.563|
-A<3>           |AND_Out<3>     |    6.620|
-A<3>           |NOT_Out<3>     |    6.078|
-A<3>           |OR_Out<3>      |    7.720|
-A<3>           |SL_Out<3>      |    7.863|
-A<3>           |SR_Out<0>      |    7.174|
-A<3>           |SR_Out<1>      |    8.036|
-A<3>           |SR_Out<2>      |    8.140|
-A<3>           |SR_Out<3>      |    7.904|
-A<3>           |XOR_Out<3>     |    6.553|
-B<0>           |AND_Out<0>     |    7.003|
-B<0>           |OR_Out<0>      |    7.380|
-B<0>           |SL_Out<0>      |    6.518|
-B<0>           |SL_Out<1>      |    6.694|
-B<0>           |SL_Out<2>      |    6.576|
-B<0>           |SL_Out<3>      |    6.848|
-B<0>           |SR_Out<0>      |    7.329|
-B<0>           |SR_Out<1>      |    6.694|
-B<0>           |SR_Out<2>      |    6.798|
-B<0>           |SR_Out<3>      |    6.670|
-B<0>           |XOR_Out<0>     |    6.895|
-B<1>           |AND_Out<1>     |    6.821|
-B<1>           |OR_Out<1>      |    6.597|
-B<1>           |SL_Out<0>      |    7.134|
-B<1>           |SL_Out<1>      |    7.415|
-B<1>           |SL_Out<2>      |    7.297|
-B<1>           |SL_Out<3>      |    7.528|
-B<1>           |SR_Out<0>      |    7.281|
-B<1>           |SR_Out<1>      |    7.052|
-B<1>           |SR_Out<2>      |    7.156|
-B<1>           |SR_Out<3>      |    7.643|
-B<1>           |XOR_Out<1>     |    6.722|
-B<2>           |AND_Out<2>     |    6.242|
-B<2>           |OR_Out<2>      |    6.576|
-B<2>           |XOR_Out<2>     |    6.671|
-B<3>           |AND_Out<3>     |    6.380|
-B<3>           |OR_Out<3>      |    6.694|
-B<3>           |XOR_Out<3>     |    6.313|
+A<0>           |AND_Out<0>     |    7.072|
+A<0>           |NOT_Out<0>     |    5.976|
+A<0>           |OR_Out<0>      |    7.387|
+A<0>           |SL_Out<0>      |    7.152|
+A<0>           |SL_Out<1>      |    7.269|
+A<0>           |SL_Out<2>      |    7.373|
+A<0>           |SL_Out<3>      |    6.799|
+A<0>           |SR_Out<0>      |    6.286|
+A<0>           |XOR_Out<0>     |    7.171|
+A<1>           |AND_Out<1>     |    7.294|
+A<1>           |NOT_Out<1>     |    6.086|
+A<1>           |OR_Out<1>      |    6.226|
+A<1>           |SL_Out<1>      |    7.274|
+A<1>           |SL_Out<2>      |    7.378|
+A<1>           |SL_Out<3>      |    7.269|
+A<1>           |SR_Out<0>      |    6.626|
+A<1>           |SR_Out<1>      |    6.668|
+A<1>           |XOR_Out<1>     |    6.970|
+A<2>           |AND_Out<2>     |    7.347|
+A<2>           |NOT_Out<2>     |    5.691|
+A<2>           |OR_Out<2>      |    6.565|
+A<2>           |SL_Out<2>      |    7.361|
+A<2>           |SL_Out<3>      |    6.787|
+A<2>           |SR_Out<0>      |    6.178|
+A<2>           |SR_Out<1>      |    6.762|
+A<2>           |SR_Out<2>      |    6.837|
+A<2>           |XOR_Out<2>     |    6.994|
+A<3>           |AND_Out<3>     |    7.804|
+A<3>           |NOT_Out<3>     |    6.543|
+A<3>           |OR_Out<3>      |    6.834|
+A<3>           |SL_Out<3>      |    7.663|
+A<3>           |SR_Out<0>      |    6.839|
+A<3>           |SR_Out<1>      |    6.505|
+A<3>           |SR_Out<2>      |    6.580|
+A<3>           |SR_Out<3>      |    6.935|
+A<3>           |XOR_Out<3>     |    7.489|
+B<0>           |AND_Out<0>     |    6.784|
+B<0>           |OR_Out<0>      |    7.099|
+B<0>           |SL_Out<0>      |    6.542|
+B<0>           |SL_Out<1>      |    6.547|
+B<0>           |SL_Out<2>      |    6.651|
+B<0>           |SL_Out<3>      |    7.273|
+B<0>           |SR_Out<0>      |    6.794|
+B<0>           |SR_Out<1>      |    6.865|
+B<0>           |SR_Out<2>      |    6.940|
+B<0>           |SR_Out<3>      |    7.547|
+B<0>           |XOR_Out<0>     |    6.561|
+B<1>           |AND_Out<1>     |    6.991|
+B<1>           |OR_Out<1>      |    6.493|
+B<1>           |SL_Out<0>      |    7.102|
+B<1>           |SL_Out<1>      |    6.853|
+B<1>           |SL_Out<2>      |    6.957|
+B<1>           |SL_Out<3>      |    7.256|
+B<1>           |SR_Out<0>      |    6.372|
+B<1>           |SR_Out<1>      |    6.539|
+B<1>           |SR_Out<2>      |    6.614|
+B<1>           |SR_Out<3>      |    7.018|
+B<1>           |XOR_Out<1>     |    6.667|
+B<2>           |AND_Out<2>     |    6.755|
+B<2>           |OR_Out<2>      |    6.671|
+B<2>           |XOR_Out<2>     |    6.402|
+B<3>           |AND_Out<3>     |    7.182|
+B<3>           |OR_Out<3>      |    6.711|
+B<3>           |XOR_Out<3>     |    6.867|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Jan 25 19:25:59 2018 
+Analysis completed Thu Jan 25 22:47:35 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 218 MB
+Peak Memory Usage: 389 MB
 
 
 
