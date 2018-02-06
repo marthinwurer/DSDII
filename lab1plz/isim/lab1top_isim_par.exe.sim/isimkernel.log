@@ -1,0 +1,31 @@
+Command line:
+   lab1top_isim_par.exe
+     -simmode  gui
+     -sdfmax  /lab1top/=netgen/par/lab1top_timesim.sdf
+     -sdfroot  /
+     -simrunnum  0
+     -socket  57475
+
+Mon Feb  5 18:35:49 2018
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 199.217 Meg
+
+ Total Signals          : 676
+ Total Nets             : 413
+ Total Signal Drivers   : 331
+ Total Blocks           : 203
+ Total Primitive Blocks : 105
+ Total Processes        : 331
+ Total Traceable Variables  : 964
+ Total Scalar Nets and Variables : 9093
+Total Line Count : 1345
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 274.792 Meg
+
+Mon Feb  5 18:36:06 2018
+

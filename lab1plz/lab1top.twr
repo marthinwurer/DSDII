@@ -1,0 +1,115 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml lab1top.twx lab1top.ncd -o lab1top.twr lab1top.pcf
+
+Design file:              lab1top.ncd
+Physical constraint file: lab1top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |AND_Out<0>     |    7.306|
+A<0>           |NOT_Out<0>     |    7.060|
+A<0>           |OR_Out<0>      |    7.417|
+A<0>           |SL_Out<0>      |    6.448|
+A<0>           |SL_Out<1>      |    6.306|
+A<0>           |SL_Out<2>      |    5.962|
+A<0>           |SL_Out<3>      |    6.357|
+A<0>           |SR_Out<0>      |    8.013|
+A<0>           |XOR_Out<0>     |    6.738|
+A<1>           |AND_Out<1>     |    7.003|
+A<1>           |NOT_Out<1>     |    6.692|
+A<1>           |OR_Out<1>      |    7.079|
+A<1>           |SL_Out<1>      |    6.568|
+A<1>           |SL_Out<2>      |    6.224|
+A<1>           |SL_Out<3>      |    6.154|
+A<1>           |SR_Out<0>      |    7.490|
+A<1>           |SR_Out<1>      |    7.694|
+A<1>           |XOR_Out<1>     |    6.922|
+A<2>           |AND_Out<2>     |    7.400|
+A<2>           |NOT_Out<2>     |    6.322|
+A<2>           |OR_Out<2>      |    7.547|
+A<2>           |SL_Out<2>      |    6.154|
+A<2>           |SL_Out<3>      |    6.134|
+A<2>           |SR_Out<0>      |    7.269|
+A<2>           |SR_Out<1>      |    7.246|
+A<2>           |SR_Out<2>      |    7.140|
+A<2>           |XOR_Out<2>     |    8.124|
+A<3>           |AND_Out<3>     |    6.700|
+A<3>           |NOT_Out<3>     |    6.749|
+A<3>           |OR_Out<3>      |    7.856|
+A<3>           |SL_Out<3>      |    6.101|
+A<3>           |SR_Out<0>      |    7.805|
+A<3>           |SR_Out<1>      |    8.018|
+A<3>           |SR_Out<2>      |    7.912|
+A<3>           |SR_Out<3>      |    7.763|
+A<3>           |XOR_Out<3>     |    7.219|
+B<0>           |AND_Out<0>     |    6.284|
+B<0>           |OR_Out<0>      |    6.395|
+B<0>           |SL_Out<0>      |    6.547|
+B<0>           |SL_Out<1>      |    6.938|
+B<0>           |SL_Out<2>      |    6.594|
+B<0>           |SL_Out<3>      |    6.448|
+B<0>           |SR_Out<0>      |    7.361|
+B<0>           |SR_Out<1>      |    7.030|
+B<0>           |SR_Out<2>      |    6.924|
+B<0>           |SR_Out<3>      |    6.860|
+B<0>           |XOR_Out<0>     |    6.837|
+B<1>           |AND_Out<1>     |    6.550|
+B<1>           |OR_Out<1>      |    6.853|
+B<1>           |SL_Out<0>      |    7.058|
+B<1>           |SL_Out<1>      |    6.984|
+B<1>           |SL_Out<2>      |    6.640|
+B<1>           |SL_Out<3>      |    7.015|
+B<1>           |SR_Out<0>      |    7.132|
+B<1>           |SR_Out<1>      |    7.332|
+B<1>           |SR_Out<2>      |    7.226|
+B<1>           |SR_Out<3>      |    7.004|
+B<1>           |XOR_Out<1>     |    6.469|
+B<2>           |AND_Out<2>     |    6.959|
+B<2>           |OR_Out<2>      |    7.068|
+B<2>           |XOR_Out<2>     |    7.683|
+B<3>           |AND_Out<3>     |    6.331|
+B<3>           |OR_Out<3>      |    6.610|
+B<3>           |XOR_Out<3>     |    6.850|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Feb  5 18:33:33 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 388 MB
+
+
+

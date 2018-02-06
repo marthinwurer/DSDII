@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.07 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.07 secs
  
---> Reading design: lab1top.prj
+--> 
+Reading design: lab1top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -105,28 +108,28 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\so_eddgy.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab2/so_eddgy.vhd" into library work
 Parsing package <so_eddgy>.
 Parsing package body <so_eddgy>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\nBitXor.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab2/nBitXor.vhd" into library work
 Parsing entity <nBitXor>.
 Parsing architecture <Dataflow> of entity <nbitxor>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\nBitRightShift.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab2/nBitRightShift.vhd" into library work
 Parsing entity <nBitRightShift>.
 Parsing architecture <struct> of entity <nbitrightshift>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\nBitOr.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab2/nBitOr.vhd" into library work
 Parsing entity <nBitOr>.
 Parsing architecture <Dataflow> of entity <nbitor>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\nBitNot.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab2/nBitNot.vhd" into library work
 Parsing entity <nBitNot>.
 Parsing architecture <Dataflow> of entity <nbitnot>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\nBitLeftShift.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab2/nBitLeftShift.vhd" into library work
 Parsing entity <nBitLeftShift>.
 Parsing architecture <struct> of entity <nbitleftshift>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\nBitAnd.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab2/nBitAnd.vhd" into library work
 Parsing entity <nBitAnd>.
 Parsing architecture <Dataflow> of entity <nbitand>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab2\lab1top.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab2/lab1top.vhd" into library work
 Parsing entity <lab1top>.
 Parsing architecture <Structural> of entity <lab1top>.
 
@@ -153,40 +156,40 @@ Elaborating entity <nBitRightShift> (architecture <struct>) with generics from l
 =========================================================================
 
 Synthesizing Unit <lab1top>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\lab1top.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab2/lab1top.vhd".
     Summary:
 	no macro.
 Unit <lab1top> synthesized.
 
 Synthesizing Unit <nBitOr>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitOr.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab2/nBitOr.vhd".
         n = 4
     Summary:
 	no macro.
 Unit <nBitOr> synthesized.
 
 Synthesizing Unit <nBitAnd>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitAnd.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab2/nBitAnd.vhd".
         n = 4
     Summary:
 	no macro.
 Unit <nBitAnd> synthesized.
 
 Synthesizing Unit <nBitXor>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitXor.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab2/nBitXor.vhd".
         n = 4
     Summary:
 Unit <nBitXor> synthesized.
 
 Synthesizing Unit <nBitNot>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitNot.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab2/nBitNot.vhd".
         n = 4
     Summary:
 	no macro.
 Unit <nBitNot> synthesized.
 
 Synthesizing Unit <nBitLeftShift>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitLeftShift.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab2/nBitLeftShift.vhd".
         n = 4
 WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit 4-to-1 multiplexer for signal <Y> created at line 53.
@@ -195,7 +198,7 @@ WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and 
 Unit <nBitLeftShift> synthesized.
 
 Synthesizing Unit <nBitRightShift>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab2\nBitRightShift.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab2/nBitRightShift.vhd".
         n = 4
 WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit 4-to-1 multiplexer for signal <Y> created at line 53.
@@ -365,12 +368,13 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.21 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.79 secs
  
 --> 
 
-Total memory usage is 259676 kilobytes
+
+Total memory usage is 380668 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

@@ -11,9 +11,11 @@ NET "B[0]" LOC = T10;
 
 
 
+
+
 # PlanAhead Generated physical constraints 
 
-NET "AND_Out[3]" LOC = T11;
-NET "AND_Out[2]" LOC = R11;
-NET "AND_Out[1]" LOC = N11;
-NET "AND_Out[0]" LOC = M11;
+NET "SL_Out[3]" LOC = T11;
+NET "SL_Out[2]" LOC = R11;
+NET "SL_Out[1]" LOC = N11;
+NET "SL_Out[0]" LOC = M11;
