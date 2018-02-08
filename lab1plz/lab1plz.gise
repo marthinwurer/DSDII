@@ -23,6 +23,7 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -30,14 +31,26 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
-    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab1tb.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="lab1tb.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="lab1tb.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab1tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="lab1tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="lab1tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab1tb_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab1top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="lab1top.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="lab1top.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="lab1top.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="lab1top.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="lab1top.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="lab1top.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="lab1top.ngc"/>
@@ -53,6 +66,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="lab1top.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="lab1top.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="lab1top.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="lab1top.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="lab1top.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lab1top.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="lab1top_envsettings.html"/>
@@ -78,8 +92,13 @@
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/lab1top_timesim.nlf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/lab1top_timesim.sdf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/par/lab1top_timesim.vhd"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
-    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -87,6 +106,10 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1517872633" xil_pn:name="TRANEXT_compLibraries_FPGA" xil_pn:prop_ck="1321705353062746806" xil_pn:start_ts="1517872633">
       <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1518119186" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1518119186">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1517872799" xil_pn:in_ck="-1336482988671772744" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1517872799">
@@ -101,6 +124,52 @@
       <outfile xil_pn:name="nBitRightShift.vhd"/>
       <outfile xil_pn:name="nBitXor.vhd"/>
       <outfile xil_pn:name="so_eddgy.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1518119186" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8528216832818779276" xil_pn:start_ts="1518119186">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1518119186" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2454321394004492022" xil_pn:start_ts="1518119186">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1518119186" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4201985719871291583" xil_pn:start_ts="1518119186">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1518119186" xil_pn:in_ck="-1336482988671772744" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1518119186">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="lab1tb.vhd"/>
+      <outfile xil_pn:name="lab1top.vhd"/>
+      <outfile xil_pn:name="nBitAnd.vhd"/>
+      <outfile xil_pn:name="nBitLeftShift.vhd"/>
+      <outfile xil_pn:name="nBitNot.vhd"/>
+      <outfile xil_pn:name="nBitOr.vhd"/>
+      <outfile xil_pn:name="nBitRightShift.vhd"/>
+      <outfile xil_pn:name="nBitXor.vhd"/>
+      <outfile xil_pn:name="so_eddgy.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1518119189" xil_pn:in_ck="-1336482988671772744" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5342025784826552312" xil_pn:start_ts="1518119186">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="lab1tb_beh.prj"/>
+      <outfile xil_pn:name="lab1tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1518119189" xil_pn:in_ck="2006267089670814085" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3257027967655123963" xil_pn:start_ts="1518119189">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="lab1tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1517873582" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1517873582">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -164,6 +233,8 @@
     <transform xil_pn:end_ts="1517873602" xil_pn:in_ck="170052515032755994" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1517873593">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="lab1top.pcf"/>
       <outfile xil_pn:name="lab1top_map.map"/>
@@ -187,6 +258,18 @@
       <outfile xil_pn:name="lab1top_pad.csv"/>
       <outfile xil_pn:name="lab1top_pad.txt"/>
       <outfile xil_pn:name="lab1top_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1518118365" xil_pn:in_ck="170052515032755862" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1518118356">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="lab1top.bgn"/>
+      <outfile xil_pn:name="lab1top.bit"/>
+      <outfile xil_pn:name="lab1top.drc"/>
+      <outfile xil_pn:name="lab1top.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
     <transform xil_pn:end_ts="1517873618" xil_pn:in_ck="170052515032755862" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="8981738629667839655" xil_pn:start_ts="1517873613">
       <status xil_pn:value="SuccessfullyRun"/>
