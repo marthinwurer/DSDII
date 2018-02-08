@@ -3,6 +3,7 @@
 #
 # found at
 # http://www.armadeus.org/wiki/index.php?title=How_to_simulate_post_synthesis_and_post_place_%26_route_design_with_GHDL
+export XILINX=/opt/Xilinx/14.7/ISE_DS/ISE/
 if [ -z "$XILINX" ]
 then
   echo "XILINX not defined"
