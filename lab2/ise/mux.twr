@@ -1,0 +1,139 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml mux.twx mux.ncd -o mux.twr mux.pcf
+
+Design file:              mux.ncd
+Physical constraint file: mux.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+S<0>           |Y<0>           |   11.586|
+S<0>           |Y<1>           |   11.304|
+S<0>           |Y<2>           |   11.823|
+S<0>           |Y<3>           |   11.386|
+S<0>           |Y<4>           |   11.588|
+S<0>           |Y<5>           |   10.606|
+S<0>           |Y<6>           |   11.048|
+S<0>           |Y<7>           |   11.378|
+S<1>           |Y<0>           |   11.135|
+S<1>           |Y<1>           |   11.257|
+S<1>           |Y<2>           |   11.536|
+S<1>           |Y<3>           |   11.146|
+S<1>           |Y<4>           |   11.872|
+S<1>           |Y<5>           |   10.770|
+S<1>           |Y<6>           |   11.223|
+S<1>           |Y<7>           |   11.028|
+S<2>           |Y<0>           |   10.837|
+S<2>           |Y<1>           |   10.725|
+S<2>           |Y<2>           |   11.408|
+S<2>           |Y<3>           |   10.782|
+S<2>           |Y<4>           |   10.850|
+S<2>           |Y<5>           |   10.415|
+S<2>           |Y<6>           |   10.588|
+S<2>           |Y<7>           |   10.577|
+inputs<0><0>   |Y<0>           |   11.301|
+inputs<0><1>   |Y<1>           |   11.238|
+inputs<0><2>   |Y<2>           |   11.288|
+inputs<0><3>   |Y<3>           |   11.370|
+inputs<0><4>   |Y<4>           |   11.443|
+inputs<0><5>   |Y<5>           |   11.413|
+inputs<0><6>   |Y<6>           |   10.769|
+inputs<0><7>   |Y<7>           |   10.783|
+inputs<1><0>   |Y<0>           |   11.335|
+inputs<1><1>   |Y<1>           |   10.740|
+inputs<1><2>   |Y<2>           |   11.078|
+inputs<1><3>   |Y<3>           |   10.378|
+inputs<1><4>   |Y<4>           |   10.983|
+inputs<1><5>   |Y<5>           |   10.307|
+inputs<1><6>   |Y<6>           |   10.578|
+inputs<1><7>   |Y<7>           |   10.911|
+inputs<2><0>   |Y<0>           |   10.509|
+inputs<2><1>   |Y<1>           |   10.235|
+inputs<2><2>   |Y<2>           |   10.539|
+inputs<2><3>   |Y<3>           |   10.260|
+inputs<2><4>   |Y<4>           |   11.016|
+inputs<2><5>   |Y<5>           |    9.970|
+inputs<2><6>   |Y<6>           |   10.173|
+inputs<2><7>   |Y<7>           |    9.998|
+inputs<3><0>   |Y<0>           |   11.019|
+inputs<3><1>   |Y<1>           |   10.850|
+inputs<3><2>   |Y<2>           |   10.753|
+inputs<3><3>   |Y<3>           |   10.650|
+inputs<3><4>   |Y<4>           |   10.607|
+inputs<3><5>   |Y<5>           |   10.751|
+inputs<3><6>   |Y<6>           |    9.613|
+inputs<3><7>   |Y<7>           |   10.186|
+inputs<4><0>   |Y<0>           |   10.508|
+inputs<4><1>   |Y<1>           |   10.665|
+inputs<4><2>   |Y<2>           |   10.464|
+inputs<4><3>   |Y<3>           |   10.994|
+inputs<4><4>   |Y<4>           |   10.530|
+inputs<4><5>   |Y<5>           |   10.577|
+inputs<4><6>   |Y<6>           |   10.318|
+inputs<4><7>   |Y<7>           |   10.272|
+inputs<5><0>   |Y<0>           |   11.517|
+inputs<5><1>   |Y<1>           |   11.205|
+inputs<5><2>   |Y<2>           |   10.998|
+inputs<5><3>   |Y<3>           |   11.153|
+inputs<5><4>   |Y<4>           |   11.749|
+inputs<5><5>   |Y<5>           |   10.403|
+inputs<5><6>   |Y<6>           |   10.228|
+inputs<5><7>   |Y<7>           |   10.557|
+inputs<6><0>   |Y<0>           |   11.025|
+inputs<6><1>   |Y<1>           |   10.406|
+inputs<6><2>   |Y<2>           |   10.739|
+inputs<6><3>   |Y<3>           |   11.092|
+inputs<6><4>   |Y<4>           |   11.807|
+inputs<6><5>   |Y<5>           |   10.875|
+inputs<6><6>   |Y<6>           |   11.027|
+inputs<6><7>   |Y<7>           |   10.361|
+inputs<7><0>   |Y<0>           |    9.976|
+inputs<7><1>   |Y<1>           |   11.081|
+inputs<7><2>   |Y<2>           |    9.736|
+inputs<7><3>   |Y<3>           |    9.926|
+inputs<7><4>   |Y<4>           |   10.113|
+inputs<7><5>   |Y<5>           |    9.457|
+inputs<7><6>   |Y<6>           |    9.561|
+inputs<7><7>   |Y<7>           |    9.528|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Feb  9 09:19:39 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 388 MB
+
+
+

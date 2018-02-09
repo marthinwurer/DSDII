@@ -1,0 +1,474 @@
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   19:19:05 01/24/2018
+-- Design Name:   
+-- Module Name:   /home/benjamin/Documents/classes/DSD1/lab_1/lab1tb.vhd
+-- Project Name:  lab_1
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: lab1top
+-- 
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends
+-- that these types always be used for the top-level I/O of a design in order
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+use work.so_eddgy.ALL;
+
+
+ENTITY lab1tb IS
+END lab1tb;
+ARCHITECTURE behavior OF lab1tb IS
+	signal A , B     : std_logic_vector (N -1 downto 0) := ( others => '0') ;
+signal or_output : std_logic_vector ( N -1 downto 0) ;
+signal and_output : std_logic_vector ( N -1 downto 0) ;
+signal xor_output : std_logic_vector ( N -1 downto 0) ;
+signal not_output : std_logic_vector ( N -1 downto 0) ;
+signal sl_output : std_logic_vector ( N -1 downto 0) ;
+signal sr_output : std_logic_vector ( N -1 downto 0) ;
+BEGIN
+	uut : entity work . lab1top
+	--generic map ( N => N )
+	port map ( A => A , B => B ,
+			OR_Out => or_output ,
+			AND_Out => and_output,
+			XOR_Out => xor_output,
+			NOT_Out => not_output,
+			SL_Out => sl_output, 
+			SR_Out => sr_output) ;
+	stim_proc : process
+	begin
+		-- the limits for i and j are good for testing the or and shift_left
+		-- values can be modified as necessary to test other functions
+		for i in 8 to 13 loop
+			for j in 1 to 7 loop
+				A <= std_logic_vector ( to_unsigned (i , N ) ) ;
+				B <= std_logic_vector ( to_unsigned (j , N ) ) ;
+				wait for 100 ns ;
+			end loop ;
+		end loop ;
+		wait ;
+	end process ;
+end;
+
+
+
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    19:14:26 01/24/2018 
+-- Design Name: 
+-- Module Name:    lab1top - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use work.so_eddgy.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+-- Entity declaration
+entity lab1top is
+	-------=------generic ( N : integer := 13) ;
+	port (A , B : in std_logic_vector ( N -1 downto 0) ;
+			OR_Out : out std_logic_vector ( N -1 downto 0) ;
+			AND_Out : out std_logic_vector ( N -1 downto 0) ;
+			XOR_Out : out std_logic_vector ( N -1 downto 0) ;
+			NOT_Out : out std_logic_vector ( N -1 downto 0) ;
+			SL_Out : out std_logic_vector ( N -1 downto 0) ;
+			SR_Out : out std_logic_vector ( N -1 downto 0) ) ;
+end lab1top ;
+architecture Structural of lab1top is
+begin
+	nBitOr0 : entity work.nBitOr
+		generic map ( N => N )
+		port map ( A => A , B => B , Y => OR_Out ) ;
+	nBitAnd0 : entity work.nBitAnd
+		generic map ( N => N )
+		port map ( A => A , B => B , Y => AND_Out ) ;
+	nBitXor0 : entity work.nBitXor
+		generic map ( N => N )
+		port map ( A => A , B => B , Y => XOR_Out ) ;
+	nBitNot0 : entity work.nBitNot
+		generic map ( N => N )
+		port map ( A => A, Y => NOT_Out ) ;
+	nBitLeftShift_0 : entity work.nBitLeftShift
+		generic map ( N => N )
+		port map ( A => A , B => B , Y => SL_Out ) ;
+	nBitRightShift_0 : entity work.nBitRightShift
+		generic map ( N => N )
+		port map ( A => A , B => B , Y => SR_Out ) ;
+end Structural;
+
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    19:06:00 01/24/2018 
+-- Design Name: 
+-- Module Name:    nBitOr - Dataflow 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity nBitAnd is
+	generic ( n : integer := 16);
+		port (A , B : in std_logic_vector (n -1 downto 0);
+				Y : out std_logic_vector (n -1 downto 0)
+		);
+		end nBitAnd ;
+architecture Dataflow of nBitAnd is
+begin
+	Y <= A and B; -- bitwise and
+end Dataflow;
+
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    19:07:38 01/24/2018 
+-- Design Name: 
+-- Module Name:    nBitLeftShift - struct 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity nBitLeftShift is
+	generic ( n : integer := 8) ;
+	port (A , B : in std_logic_vector (n -1 downto 0) ;
+			Y		: out std_logic_vector (n -1 downto 0) ) ;
+end nBitLeftShift ;
+architecture struct of nBitLeftShift is
+-- create array of vectors to hold each of n shifters
+	type shifty_array is array (n -1 downto 0) of std_logic_vector (n -1 downto 0) ;
+	signal Y_array : shifty_array ;
+begin
+	generate_shifters: for i in 0 to n -1 generate
+		Y_array( i )(n-1 downto i ) <= A (n-1-i downto 0) ;
+		left_fill : if i > 0 generate
+			Y_array ( i ) (i -1 downto 0) <= ( others => '0') ;
+		end generate left_fill ;
+	end generate generate_shifters ;
+	-- value of B ( in binary ) determines number of bits A is shifted .
+	-- Warning : B ( in decimal ) must not exceed n -1. If n=16 bits , the value
+	-- of B must be 0 to 15 ( shifting 16 does not make sense ). If n =17 , then
+	-- the value of B can be 0 to 16.
+	Y <= Y_array ( to_integer ( unsigned ( B ) ) ) ;
+end struct;
+
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    19:06:00 01/24/2018 
+-- Design Name: 
+-- Module Name:    nBitOr - Dataflow 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity nBitNot is
+	generic ( n : integer := 16);
+		port (A : in std_logic_vector (n -1 downto 0);
+				Y : out std_logic_vector (n -1 downto 0)
+		);
+		end nBitNot ;
+architecture Dataflow of nBitNot is
+begin
+	Y <= not A; -- bitwise nit
+end Dataflow;
+
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    19:06:00 01/24/2018 
+-- Design Name: 
+-- Module Name:    nBitOr - Dataflow 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity nBitOr is
+	generic ( n : integer := 16);
+		port (A , B : in std_logic_vector (n -1 downto 0);
+				Y : out std_logic_vector (n -1 downto 0)
+		);
+		end nBitOr ;
+architecture Dataflow of nBitOr is
+begin
+	Y <= A or B; -- bitwise or
+end Dataflow;
+
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    19:07:38 01/24/2018 
+-- Design Name: 
+-- Module Name:    nBitLeftShift - struct 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity nBitRightShift is
+	generic ( n : integer := 8) ;
+	port (A , B : in std_logic_vector (n -1 downto 0) ;
+			Y		: out std_logic_vector (n -1 downto 0) ) ;
+end nBitRightShift ;
+architecture struct of nBitRightShift is
+-- create array of vectors to hold each of n shifters
+	type shifty_array is array (n -1 downto 0) of std_logic_vector (n -1 downto 0) ;
+	signal Y_array : shifty_array ;
+begin
+	generate_shifters: for i in 0 to n -1 generate
+		Y_array( i )(n-1-i downto 0 ) <= A (n-1 downto i) ;
+		left_fill : if i > 0 generate
+			Y_array ( i ) (n -1 downto n-i) <= ( others => '0') ;
+		end generate left_fill ;
+	end generate generate_shifters ;
+	-- value of B ( in binary ) determines number of bits A is shifted .
+	-- Warning : B ( in decimal ) must not exceed n -1. If n=16 bits , the value
+	-- of B must be 0 to 15 ( shifting 16 does not make sense ). If n =17 , then
+	-- the value of B can be 0 to 16.
+	Y <= Y_array ( to_integer ( unsigned ( B ) ) ) ;
+end struct;
+
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    19:06:00 01/24/2018 
+-- Design Name: 
+-- Module Name:    nBitOr - Dataflow 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity nBitXor is
+	generic ( n : integer := 16);
+		port (A , B : in std_logic_vector (n -1 downto 0);
+				Y : out std_logic_vector (n -1 downto 0)
+		);
+		end nBitXor ;
+architecture Dataflow of nBitXor is
+begin
+	Y <= A xor B; -- bitwise xor
+end Dataflow;
+
+--
+--	Package File Template
+--
+--	Purpose: This package defines supplemental types, subtypes, 
+--		 constants, and functions 
+--
+--   To use any of the example code shown below, uncomment the lines and modify as necessary
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+package so_eddgy is
+
+-- type <new_type> is
+--  record
+--    <type_name>        : std_logic_vector( 7 downto 0);
+--    <type_name>        : std_logic;
+-- end record;
+--
+-- Declare constants
+--
+-- constant <constant_name>		: time := <time_unit> ns;
+-- constant <constant_name>		: integer := <value;
+--
+-- Declare functions and procedure
+--
+-- function <function_name>  (signal <signal_name> : in <type_declaration>) return <type_declaration>;
+-- procedure <procedure_name> (<type_declaration> <constant_name>	: in <type_declaration>);
+--
+	constant N       : integer                          := 8;
+end so_eddgy;
+package body so_eddgy is
+
+---- Example 1
+--  function <function_name>  (signal <signal_name> : in <type_declaration>  ) return <type_declaration> is
+--    variable <variable_name>     : <type_declaration>;
+--  begin
+--    <variable_name> := <signal_name> xor <signal_name>;
+--    return <variable_name>; 
+--  end <function_name>;
+
+---- Example 2
+--  function <function_name>  (signal <signal_name> : in <type_declaration>;
+--                         signal <signal_name>   : in <type_declaration>  ) return <type_declaration> is
+--  begin
+--    if (<signal_name> = '1') then
+--      return <signal_name>;
+--    else
+--      return 'Z';
+--    end if;
+--  end <function_name>;
+
+---- Procedure Example
+--  procedure <procedure_name>  (<type_declaration> <constant_name>  : in <type_declaration>) is
+--    
+--  begin
+--    
+--  end <procedure_name>;
+ 
+end so_eddgy;

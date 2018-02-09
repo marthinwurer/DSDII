@@ -1,0 +1,13 @@
+v 4
+file "/home/benjamin/Documents/notes/DSDII/lab2/src/" "so_eddgy.vhd" "bfb5387289cdc24ec1bd5a989ebe5fb46c5e2c3b" "20180209020856.468":
+  package so_eddgy at 10( 226) + 0 on 11 body;
+  package body so_eddgy at 42( 1275) + 0 on 12;
+file "/home/benjamin/Documents/notes/DSDII/lab2/src/" "mux.vhd" "8626e511d1bed69ae58793e5112fb9a7b263901d" "20180209020856.597":
+  entity mux at 2( 21) + 0 on 15;
+  architecture dataflow of mux at 15( 293) + 0 on 16;
+file "/home/benjamin/Documents/notes/DSDII/lab2/src/" "lab2tb.vhd" "423e49139c2392cdb8f936a6b28b796db42d1e49" "20180209020856.628":
+  entity lab2tb at 28( 906) + 0 on 17;
+  architecture behavior of lab2tb at 37( 1030) + 0 on 18;
+file "/home/benjamin/Documents/notes/DSDII/lab2/src/" "decoder.vhd" "bee6fa20061c9eb7137455319cb293cba7116fb8" "20180209020856.567":
+  entity decoder at 2( 21) + 0 on 13;
+  architecture dataflow of decoder at 14( 286) + 0 on 14;

@@ -1,0 +1,25 @@
+v 4
+file "/home/benjamin/Documents/notes/DSDII/lab_1/" "nBitXor.vhd" "c92b56d04833bd473902d05a3941c3f1eda41262" "20180125221200.061":
+  entity nbitxor at 20( 464) + 0 on 15;
+  architecture dataflow of nbitxor at 38( 968) + 0 on 16;
+file "/home/benjamin/Documents/notes/DSDII/lab_1/" "nBitRightShift.vhd" "e797002fd4f18727c576e4e2cd57244d55114598" "20180125221200.150":
+  entity nbitrightshift at 20( 469) + 0 on 21;
+  architecture struct of nbitrightshift at 38( 1038) + 0 on 22;
+file "/home/benjamin/Documents/notes/DSDII/lab_1/" "nBitOr.vhd" "39353049a825dafe41b3c03f47cb73fddccdacff" "20180125221200.018":
+  entity nbitor at 20( 464) + 0 on 11;
+  architecture dataflow of nbitor at 38( 966) + 0 on 12;
+file "/home/benjamin/Documents/notes/DSDII/lab_1/" "nBitNot.vhd" "f974454f466621da66c74372b9474c7b6543a9d5" "20180125221200.080":
+  entity nbitnot at 20( 464) + 0 on 17;
+  architecture dataflow of nbitnot at 38( 964) + 0 on 18;
+file "/home/benjamin/Documents/notes/DSDII/lab_1/" "nBitLeftShift.vhd" "4c8dd7a147ccb0aaff8c39cf27f61129a9b9dfbf" "20180125221200.101":
+  entity nbitleftshift at 20( 469) + 0 on 19;
+  architecture struct of nbitleftshift at 38( 1036) + 0 on 20;
+file "/home/benjamin/Documents/notes/DSDII/lab_1/" "nBitAnd.vhd" "63ae91ec2a4bc761c25388a2ccbab8a94908335b" "20180125221200.040":
+  entity nbitand at 20( 464) + 0 on 13;
+  architecture dataflow of nbitand at 38( 968) + 0 on 14;
+file "/home/benjamin/Documents/notes/DSDII/lab_1/" "lab1top.vhd" "330b66e3db3158c8dcc05b3f509c6b6687140d10" "20180125221200.195":
+  entity lab1top at 20( 467) + 0 on 23;
+  architecture structural of lab1top at 43( 1260) + 0 on 24;
+file "/home/benjamin/Documents/notes/DSDII/lab_1/" "lab1tb.vhd" "5e76839ae8aeb80d18fa88c4d6eb1327d02f12a1" "20180125221446.504":
+  entity lab1tb at 28( 906) + 0 on 29;
+  architecture behavior of lab1tb at 33( 1004) + 0 on 30;

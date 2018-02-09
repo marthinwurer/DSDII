@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="104" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 31: Cannot find &lt;<arg fmt="%s" index="1">so_eddgy</arg>&gt; in library &lt;<arg fmt="%s" index="2">work</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 34: Unit &lt;<arg fmt="%s" index="1">test</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="374" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 36: Entity &lt;<arg fmt="%s" index="1">test</arg>&gt; is not yet compiled.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 37: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 38: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 39: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 40: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 41: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 42: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 43: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 47: &lt;<arg fmt="%s" index="1">a</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 48: &lt;<arg fmt="%s" index="1">or_output</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="192" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 48: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">or_out</arg> cannot be an expression
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 49: &lt;<arg fmt="%s" index="1">and_output</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="192" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 49: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">and_out</arg> cannot be an expression
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 50: &lt;<arg fmt="%s" index="1">xor_output</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="192" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 50: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">xor_out</arg> cannot be an expression
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 51: &lt;<arg fmt="%s" index="1">not_output</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="192" delta="unknown" >"/home/benjamin/Documents/notes/DSDII/lab1plz/test.vhd" Line 51: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">not_out</arg> cannot be an expression
+</msg>
+
+</messages>
+

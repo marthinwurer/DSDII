@@ -1,0 +1,32 @@
+ISim log file
+Running: /home/benjamin/Documents/notes/DSDII/lab2/ise/lab2tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/benjamin/Documents/notes/DSDII/lab2/ise/lab2tb_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps: Note: 0 (/lab2tb/).
+at 0 ps: Note: in UUU (/lab2tb/).
+at 0 ps, Instance /lab2tb/dec/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /lab2tb/mux1/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 100 ns: Note: 1 (/lab2tb/).
+at 100 ns: Note: in 000 (/lab2tb/).
+at 200 ns: Note: 2 (/lab2tb/).
+at 200 ns: Note: in 001 (/lab2tb/).
+at 300 ns: Note: 3 (/lab2tb/).
+at 300 ns: Note: in 010 (/lab2tb/).
+at 400 ns: Note: 4 (/lab2tb/).
+at 400 ns: Note: in 011 (/lab2tb/).
+at 500 ns: Note: 5 (/lab2tb/).
+at 500 ns: Note: in 100 (/lab2tb/).
+at 600 ns: Note: 6 (/lab2tb/).
+at 600 ns: Note: in 101 (/lab2tb/).
+at 700 ns: Note: 7 (/lab2tb/).
+at 700 ns: Note: in 110 (/lab2tb/).
+# exit 0

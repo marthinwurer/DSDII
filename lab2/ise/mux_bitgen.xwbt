@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/benjamin/Documents/notes/DSDII/lab2/ise/mux.ncd
+OUTFILE=/home/benjamin/Documents/notes/DSDII/lab2/ise/mux.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/benjamin/Documents/notes/DSDII/lab2/ise
+LICENSE=WebPack
+USER_INFO=211470492_0_0_878

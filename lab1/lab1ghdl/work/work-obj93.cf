@@ -1,0 +1,28 @@
+v 4
+file "/home/benjamin/Documents/notes/DSDII/lab1ghdl/" "lab1tb.vhd" "d4392f623bec312438ac2353d27ae72754e8ba0c" "20180208195346.777":
+  entity lab1tb at 28( 906) + 0 on 35;
+  architecture behavior of lab1tb at 36( 1029) + 0 on 36;
+file "/home/benjamin/Documents/notes/DSDII/lab1ghdl/" "lab1top.vhd" "a99ada8c8e5e97e4d36aa58fbcdf72b21b49ec78" "20180208195346.723":
+  entity lab1top at 20( 467) + 0 on 33;
+  architecture structural of lab1top at 44( 1297) + 0 on 34;
+file "/home/benjamin/Documents/notes/DSDII/lab1ghdl/" "nBitAnd.vhd" "63ae91ec2a4bc761c25388a2ccbab8a94908335b" "20180208194556.687":
+  entity nbitand at 20( 464) + 0 on 15;
+  architecture dataflow of nbitand at 38( 968) + 0 on 16;
+file "/home/benjamin/Documents/notes/DSDII/lab1ghdl/" "nBitLeftShift.vhd" "4c8dd7a147ccb0aaff8c39cf27f61129a9b9dfbf" "20180208194556.761":
+  entity nbitleftshift at 20( 469) + 0 on 21;
+  architecture struct of nbitleftshift at 38( 1036) + 0 on 22;
+file "/home/benjamin/Documents/notes/DSDII/lab1ghdl/" "nBitNot.vhd" "f974454f466621da66c74372b9474c7b6543a9d5" "20180208194556.740":
+  entity nbitnot at 20( 464) + 0 on 19;
+  architecture dataflow of nbitnot at 38( 964) + 0 on 20;
+file "/home/benjamin/Documents/notes/DSDII/lab1ghdl/" "nBitOr.vhd" "39353049a825dafe41b3c03f47cb73fddccdacff" "20180208194556.664":
+  entity nbitor at 20( 464) + 0 on 13;
+  architecture dataflow of nbitor at 38( 966) + 0 on 14;
+file "/home/benjamin/Documents/notes/DSDII/lab1ghdl/" "nBitRightShift.vhd" "68db1ec4b46c288bce5c1c511daf0c9f0e0a9b71" "20180208194556.812":
+  entity nbitrightshift at 20( 469) + 0 on 23;
+  architecture struct of nbitrightshift at 38( 1038) + 0 on 24;
+file "/home/benjamin/Documents/notes/DSDII/lab1ghdl/" "nBitXor.vhd" "c92b56d04833bd473902d05a3941c3f1eda41262" "20180208194556.718":
+  entity nbitxor at 20( 464) + 0 on 17;
+  architecture dataflow of nbitxor at 38( 968) + 0 on 18;
+file "/home/benjamin/Documents/notes/DSDII/lab1ghdl/" "so_eddgy.vhd" "1d96af872f7005b1cc973b279ad942c3079b94c4" "20180208195346.700":
+  package so_eddgy at 10( 226) + 0 on 31;
+  package body so_eddgy at 33( 879) + 0 on 32;
