@@ -31,10 +31,10 @@ USE ieee.numeric_std.all;
 use work.so_eddgy.ALL;
 
 
-ENTITY lab2tb IS
-END lab2tb;
+ENTITY unit_tests IS
+END unit_tests;
 
-ARCHITECTURE behavior OF lab2tb IS
+ARCHITECTURE behavior OF unit_tests IS
 	constant width : integer := 16;
 	constant d_w : integer := 8;
 	constant ldw : integer := i_log2(d_w);
@@ -54,6 +54,7 @@ ARCHITECTURE behavior OF lab2tb IS
 	);
 	end component;
 
+
 	signal sel: std_logic_vector (ldw-1 downto 0);
 	signal decode_out: std_logic_vector (d_w-1 downto 0);
 	signal mux_in: dwn_array(d_w-1 downto 0):= ("00000001",
@@ -71,19 +72,16 @@ BEGIN
 
 	mux1: entity work.mux generic map (n_in=>d_w)
 		port map (inputs=>mux_in, S=>sel, Y=>mux_out);
+
 	
 	stim_proc : process
-	
 	begin
-		-- test the decoder
+		-- test the decoder and the mux
 		for i in 0 to d_w-1 loop
 			sel <= to_slv(i, sel'length);
 			report "in "& toString(sel) & " i:" & integer'image(i);
 			wait for 100 ns;
 		end loop;
-
-		-- test the mux
-
 		wait ;
 	end process ;
 end;

@@ -13,4 +13,4 @@ ghdl -i --workdir=work *.vhd
 ghdl --gen-makefile --workdir=work $filename > makefile
 
 sed -i "7a\
-	GHDLRUNFLAGS= --vcd=${filename}.vcd" makefile
+	GHDLRUNFLAGS= --vcd=wave_${filename}.vcd" makefile

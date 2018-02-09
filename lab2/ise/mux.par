@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-benjamin-UX303UA::  Fri Feb 09 09:19:29 2018
+benjamin-UX303UA::  Fri Feb 09 09:24:52 2018
 
 par -w -intstyle ise -ol high -mt off mux_map.ncd mux.ncd mux.pcf 
 

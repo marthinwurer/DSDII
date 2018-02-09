@@ -4,8 +4,8 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="6">
-<DesignStatistics TimeStamp="Fri Feb  9 09:19:45 2018"><group name="NetStatistics">
+<DeviceUsageSummary rev="7">
+<DesignStatistics TimeStamp="Fri Feb  9 09:24:50 2018"><group name="NetStatistics">
 <item name="NumNets_Active" rev="6">
 <attrib name="value" value="150"/></item>
 <item name="NumNodesOfType_Active_BOUNCEIN" rev="6">
@@ -48,49 +48,30 @@
 <attrib name="value" value="3"/></item>
 </group>
 <group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="5">
+<item name="AGG_BONDED_IO" rev="7">
 <attrib name="value" value="75"/></item>
-<item name="AGG_IO" rev="5">
+<item name="AGG_IO" rev="7">
 <attrib name="value" value="75"/></item>
-<item name="AGG_SLICE" rev="5">
+<item name="AGG_SLICE" rev="7">
 <attrib name="value" value="8"/></item>
-<item name="NUM_BONDED_IOB" rev="5">
+<item name="NUM_BONDED_IOB" rev="7">
 <attrib name="value" value="75"/></item>
-<item name="NUM_BSLUTONLY" rev="5">
+<item name="NUM_BSLUTONLY" rev="7">
 <attrib name="value" value="16"/></item>
-<item name="NUM_BSUSED" rev="5">
+<item name="NUM_BSUSED" rev="7">
 <attrib name="value" value="16"/></item>
-<item name="NUM_LOGIC_O6ONLY" rev="5">
+<item name="NUM_LOGIC_O6ONLY" rev="7">
 <attrib name="value" value="16"/></item>
-<item name="NUM_SLICEL" rev="5">
+<item name="NUM_SLICEL" rev="7">
 <attrib name="value" value="8"/></item>
-<item name="NUM_SLICE_CYINIT" rev="5">
+<item name="NUM_SLICE_CYINIT" rev="7">
 <attrib name="value" value="16"/></item>
-<item name="NUM_SLICE_F7MUX" rev="5">
+<item name="NUM_SLICE_F7MUX" rev="7">
 <attrib name="value" value="8"/></item>
-<item name="NUM_SLICE_UNUSEDCTRL" rev="5">
+<item name="NUM_SLICE_UNUSEDCTRL" rev="7">
 <attrib name="value" value="8"/></item>
 </group>
 </DesignStatistics>
-<DeviceUsage TimeStamp="Fri Feb  9 09:19:45 2018"><group name="SiteSummary">
-<item name="IOB" rev="6">
-<attrib name="total" value="1000000"/><attrib name="used" value="75"/></item>
-<item name="IOB_IMUX" rev="6">
-<attrib name="total" value="1000000"/><attrib name="used" value="67"/></item>
-<item name="IOB_INBUF" rev="6">
-<attrib name="total" value="1000000"/><attrib name="used" value="67"/></item>
-<item name="IOB_OUTBUF" rev="6">
-<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
-<item name="LUT6" rev="6">
-<attrib name="total" value="1000000"/><attrib name="used" value="16"/></item>
-<item name="PAD" rev="6">
-<attrib name="total" value="1000000"/><attrib name="used" value="75"/></item>
-<item name="SELMUX2_1" rev="6">
-<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
-<item name="SLICEL" rev="6">
-<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
-</group>
-</DeviceUsage>
 <ReportConfigData TimeStamp="Fri Feb  9 09:19:45 2018"><group name="IOB_OUTBUF">
 <item name="DRIVEATTRBOX" rev="6">
 <attrib name="12" value="8"/></item>

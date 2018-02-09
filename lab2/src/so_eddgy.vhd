@@ -1,11 +1,8 @@
---
---	Package File Template
---
---	Purpose: This package defines supplemental types, subtypes, 
---		 constants, and functions 
---
---   To use any of the example code shown below, uncomment the lines and modify as necessary
---
+--------------------------------------------------------------------
+-- Benjamin Maitland
+-- 
+-- This package contains global constants (like bit width), as well as 
+-- a number of utility functions (like toString, log2, etc).
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
@@ -13,7 +10,8 @@ USE ieee.numeric_std.all;
 use IEEE.math_real.ALL;
 
 package so_eddgy is
-	constant N       : integer                          := 8;
+	constant N : integer := 8;
+	constant bit_width : integer := N;
 
 	subtype data_width_n is std_logic_vector(N-1 downto 0);
 	subtype data_width_8 is std_logic_vector(7 downto 0);
@@ -47,7 +45,6 @@ package body so_eddgy is
 
 	function to_slv (x: integer; len: integer) return std_logic_vector
 	is begin
-		report integer'image(to_integer(to_unsigned(x,len)));
 		return std_logic_vector(to_unsigned(x,len));
 	end to_slv;
 
