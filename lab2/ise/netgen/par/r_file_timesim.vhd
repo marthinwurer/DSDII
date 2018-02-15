@@ -7,17 +7,17 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: r_file_timesim.vhd
--- /___/   /\     Timestamp: Thu Feb 15 18:35:43 2018
+-- /___/   /\     Timestamp: Thu Feb 15 18:51:28 2018
 -- \   \  /  \ 
 --  \___\/\___\
 --             
 -- Command	: -intstyle ise -s 3 -pcf r_file.pcf -rpw 100 -tpw 0 -ar Structure -tm r_file -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim r_file.ncd r_file_timesim.vhd 
 -- Device	: 6slx16csg324-3 (PRODUCTION 1.23 2013-10-13)
 -- Input file	: r_file.ncd
--- Output file	: /home/benjamin/Documents/notes/DSDII/lab2/ise/netgen/par/r_file_timesim.vhd
+-- Output file	: C:\Users\bhm3791\projects\DSDII\lab2\ise\netgen\par\r_file_timesim.vhd
 -- # of Entities	: 1
 -- Design Name	: r_file
--- Xilinx	: /opt/Xilinx/14.7/ISE_DS/ISE/
+-- Xilinx	: C:\Xilinx\14.7\ISE_DS\ISE\
 --             
 -- Purpose:    
 --     This VHDL netlist is a verification model and uses simulation 
@@ -183,9 +183,9 @@ architecture Structure of r_file is
   signal mux2_Mmux_Y_35_130 : STD_LOGIC; 
   signal mux2_Mmux_Y_45_122 : STD_LOGIC; 
   signal out2_5_OBUF_121 : STD_LOGIC; 
-  signal mux2_Mmux_Y_34_158 : STD_LOGIC; 
-  signal mux2_Mmux_Y_44_150 : STD_LOGIC; 
-  signal out2_4_OBUF_149 : STD_LOGIC; 
+  signal out2_4_OBUF_158 : STD_LOGIC; 
+  signal mux2_Mmux_Y_44_157 : STD_LOGIC; 
+  signal mux2_Mmux_Y_34_149 : STD_LOGIC; 
   signal mux2_Mmux_Y_36_194 : STD_LOGIC; 
   signal mux2_Mmux_Y_46_186 : STD_LOGIC; 
   signal out2_6_OBUF_185 : STD_LOGIC; 
@@ -202,14 +202,14 @@ architecture Structure of r_file is
   signal mux1_Mmux_Y_37_309 : STD_LOGIC; 
   signal mux1_Mmux_Y_47_301 : STD_LOGIC; 
   signal out1_7_OBUF_300 : STD_LOGIC; 
+  signal input_4_IBUF_rt_337 : STD_LOGIC; 
   signal registers_4_reg_output_4_Q : STD_LOGIC; 
-  signal input_4_IBUF_rt_336 : STD_LOGIC; 
-  signal registers_4_reg_output_5_Q : STD_LOGIC; 
   signal input_5_IBUF_rt_331 : STD_LOGIC; 
+  signal registers_4_reg_output_5_Q : STD_LOGIC; 
   signal registers_4_reg_output_6_Q : STD_LOGIC; 
   signal input_6_IBUF_rt_326 : STD_LOGIC; 
+  signal input_7_IBUF_rt_320 : STD_LOGIC; 
   signal registers_4_reg_output_7_Q : STD_LOGIC; 
-  signal input_7_IBUF_rt_319 : STD_LOGIC; 
   signal mux2_Mmux_Y_31_359 : STD_LOGIC; 
   signal mux2_Mmux_Y_41_351 : STD_LOGIC; 
   signal out2_1_OBUF_350 : STD_LOGIC; 
@@ -1024,7 +1024,7 @@ begin
       PATHPULSE => 202 ps
     )
     port map (
-      I => out2_4_OBUF_149,
+      I => out2_4_OBUF_158,
       O => out2_4_OBUF_0
     );
   reg_enable_6_reg_enable_6_AMUX_Delay : X_BUF
@@ -1040,9 +1040,9 @@ begin
       LOC => "SLICE_X4Y3"
     )
     port map (
-      IA => mux2_Mmux_Y_44_150,
-      IB => mux2_Mmux_Y_34_158,
-      O => out2_4_OBUF_149,
+      IA => mux2_Mmux_Y_44_157,
+      IB => mux2_Mmux_Y_34_149,
+      O => out2_4_OBUF_158,
       SEL => rd2_2_IBUF_0
     );
   mux2_Mmux_Y_44 : X_LUT6
@@ -1057,7 +1057,7 @@ begin
       ADR2 => registers_3_reg_output_4_Q,
       ADR0 => registers_1_reg_output_4_Q,
       ADR3 => registers_0_reg_output_4_Q,
-      O => mux2_Mmux_Y_44_150
+      O => mux2_Mmux_Y_44_157
     );
   mux2_Mmux_Y_34 : X_LUT6
     generic map(
@@ -1071,7 +1071,7 @@ begin
       ADR2 => registers_7_reg_output_4_Q,
       ADR0 => registers_5_reg_output_4_Q,
       ADR5 => registers_4_reg_output_4_0,
-      O => mux2_Mmux_Y_34_158
+      O => mux2_Mmux_Y_34_149
     );
   reg_enable_6_1 : X_LUT6
     generic map(
@@ -1751,7 +1751,7 @@ begin
       ADR4 => '1',
       ADR3 => '1',
       ADR2 => input_7_IBUF_0,
-      O => input_7_IBUF_rt_319
+      O => input_7_IBUF_rt_320
     );
   registers_4_reg_output_7 : X_FF
     generic map(
@@ -1761,7 +1761,7 @@ begin
     port map (
       CE => reg_enable(4),
       CLK => NlwBufferSignal_registers_4_reg_output_7_CLK,
-      I => input_7_IBUF_rt_319,
+      I => input_7_IBUF_rt_320,
       O => registers_4_reg_output_7_Q,
       RST => rst_IBUF_0,
       SET => GND
@@ -1868,7 +1868,7 @@ begin
       ADR4 => '1',
       ADR3 => '1',
       ADR2 => input_4_IBUF_0,
-      O => input_4_IBUF_rt_336
+      O => input_4_IBUF_rt_337
     );
   registers_4_reg_output_4 : X_FF
     generic map(
@@ -1878,7 +1878,7 @@ begin
     port map (
       CE => reg_enable(4),
       CLK => NlwBufferSignal_registers_4_reg_output_4_CLK,
-      I => input_4_IBUF_rt_336,
+      I => input_4_IBUF_rt_337,
       O => registers_4_reg_output_4_Q,
       RST => rst_IBUF_0,
       SET => GND

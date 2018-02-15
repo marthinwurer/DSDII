@@ -1,4 +1,4 @@
-Release 14.7 - netgen P.20131013 (lin64)
+Release 14.7 - netgen P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: netgen -intstyle ise -s 3 -pcf r_file.pcf -rpw 100 -tpw 0 -ar
@@ -7,7 +7,7 @@ r_file.ncd r_file_timesim.vhd
 
 Read and Annotate design 'r_file.ncd' ...
 Loading device for application Rf_Device from file '6slx16.nph' in environment
-/opt/Xilinx/14.7/ISE_DS/ISE/.
+C:\Xilinx\14.7\ISE_DS\ISE\.
    "r_file" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
 Loading constraints from 'r_file.pcf'...
 The speed grade (-3) differs from the speed grade specified in the .ncd file
@@ -18,11 +18,9 @@ Processing design ...
   Preping design's networks ...
   Preping design's macros ...
 Writing VHDL netlist
-'/home/benjamin/Documents/notes/DSDII/lab2/ise/netgen/par/r_file_timesim.vhd'
-...
+'C:\Users\bhm3791\projects\DSDII\lab2\ise\netgen\par\r_file_timesim.vhd' ...
 Writing VHDL SDF file
-'/home/benjamin/Documents/notes/DSDII/lab2/ise/netgen/par/r_file_timesim.sdf'
-...
+'C:\Users\bhm3791\projects\DSDII\lab2\ise\netgen\par\r_file_timesim.sdf' ...
 INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx SIMPRIM
    simulation primitives and has to be used with SIMPRIM library for correct
    compilation and simulation. 
@@ -34,4 +32,4 @@ INFO:NetListWriters:665 - For more information on how to pass the SDF switches
    to the simulator, see your Simulator tool documentation.
 Number of warnings: 0
 Number of info messages: 3
-Total memory usage is 435264 kilobytes
+Total memory usage is 242440 kilobytes

@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (lin64)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
-3 -fastpaths -xml r_file.twx r_file.ncd -o r_file.twr r_file.pcf
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml r_file.twx r_file.ncd -o r_file.twr r_file.pcf
 
 Design file:              r_file.ncd
 Physical constraint file: r_file.pcf
@@ -129,14 +129,14 @@ rd2<2>         |out2<7>        |    6.500|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Feb 15 18:35:38 2018 
+Analysis completed Thu Feb 15 18:51:22 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 389 MB
+Peak Memory Usage: 219 MB
 
 
 

@@ -20,7 +20,7 @@ architecture behav of module is
 
 begin
 
-	process (clk, rst) is
+	process (clk, rst, we) is
 	begin
 		if rst = '1' then
 			output <= r;
