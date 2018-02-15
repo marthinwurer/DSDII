@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/benjamin/Documents/notes/DSDII/lab2/ise/r_file.xst" -ofn "/home/benjamin/Documents/notes/DSDII/lab2/ise/r_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 r_file.ngc r_file.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o r_file_map.ncd r_file.ngd r_file.pcf 
+par -w -intstyle ise -ol high -mt off r_file_map.ncd r_file.ncd r_file.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml r_file.twx r_file.ncd -o r_file.twr r_file.pcf 
+netgen -intstyle ise -s 3  -pcf r_file.pcf -rpw 100 -tpw 0 -ar Structure -tm r_file -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim r_file.ncd r_file_timesim.vhd 
+xst -intstyle ise -ifn "/home/benjamin/Documents/notes/DSDII/lab2/ise/r_file.xst" -ofn "/home/benjamin/Documents/notes/DSDII/lab2/ise/r_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 r_file.ngc r_file.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o r_file_map.ncd r_file.ngd r_file.pcf 
+par -w -intstyle ise -ol high -mt off r_file_map.ncd r_file.ncd r_file.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml r_file.twx r_file.ncd -o r_file.twr r_file.pcf 
+netgen -intstyle ise -s 3  -pcf r_file.pcf -rpw 100 -tpw 0 -ar Structure -tm r_file -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim r_file.ncd r_file_timesim.vhd 

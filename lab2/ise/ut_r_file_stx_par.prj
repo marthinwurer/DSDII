@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/par/r_file_timesim.vhd"
+vhdl isim_temp "../src/ut_r_file.vhd"

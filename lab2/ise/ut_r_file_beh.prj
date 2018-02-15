@@ -1,0 +1,6 @@
+vhdl work "../src/so_eddgy.vhd"
+vhdl work "../src/mux.vhd"
+vhdl work "../src/module.vhd"
+vhdl work "../src/decoder.vhd"
+vhdl work "../src/r_file.vhd"
+vhdl work "../src/ut_r_file.vhd"

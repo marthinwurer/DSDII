@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-02-08T21:12:37</DateModified>
-  <ModuleName>lab2tb</ModuleName>
+  <DateModified>2018-02-15T18:25:39</DateModified>
+  <ModuleName>r_file</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/benjamin/Documents/notes/DSDII/lab2/ise/iseconfig/decoder.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/benjamin/Documents/notes/DSDII/lab2/ise</ImplementationReportsDirectory>
-  <DateInitialized>2018-02-08T21:12:37</DateInitialized>
+  <ImplementationReportsDirectory>/home/benjamin/Documents/notes/DSDII/lab2/ise/</ImplementationReportsDirectory>
+  <DateInitialized>2018-02-15T18:25:39</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

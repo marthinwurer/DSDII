@@ -11,6 +11,7 @@ use IEEE.math_real.ALL;
 
 package so_eddgy is
 	constant N : integer := 8;
+	constant n_regs : integer := 8;
 	constant bit_width : integer := N;
 
 	subtype data_width_n is std_logic_vector(N-1 downto 0);
@@ -50,8 +51,8 @@ package body so_eddgy is
 
 	function toString(x: std_logic_vector) return string
 	is 
-		variable temp : string(0 to x'length):= (others =>NUL);
-		variable index : integer :=0;
+		variable temp : string(1 to x'length):= (others =>NUL);
+		variable index : integer :=1;
 	begin
 		for i in x'range loop
 			temp(index) := std_logic'image(x(i))(2);

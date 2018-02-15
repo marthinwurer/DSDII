@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/benjamin/Documents/notes/DSDII/lab2/src/module.vhd" Line 27: <arg fmt="%s" index="1">we</arg> should be on the sensitivity list of the process
+</msg>
+
 </messages>
 
