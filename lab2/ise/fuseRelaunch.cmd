@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/benjamin/Documents/notes/DSDII/lab2/ise/ut_r_file_isim_par.exe" -prj "/home/benjamin/Documents/notes/DSDII/lab2/ise/ut_r_file_par.prj" "work.ut_r_file" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/bhm3791/projects/DSDII/lab2/ise/ut_r_file_isim_par.exe" -prj "C:/Users/bhm3791/projects/DSDII/lab2/ise/ut_r_file_par.prj" "work.ut_r_file" 

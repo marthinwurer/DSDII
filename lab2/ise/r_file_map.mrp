@@ -10,37 +10,37 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Feb 15 18:51:01 2018
+Mapped Date    : Thu Feb 15 19:36:17 2018
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    6
 Slice Logic Utilization:
   Number of Slice Registers:                    64 out of  18,224    1%
     Number used as Flip Flops:                  64
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         40 out of   9,112    1%
+  Number of Slice LUTs:                         44 out of   9,112    1%
     Number used as logic:                       36 out of   9,112    1%
       Number using O6 output only:              32
       Number using O5 output only:               0
       Number using O5 and O6:                    4
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      4
-      Number with same-slice register load:      4
+    Number used exclusively as route-thrus:      8
+      Number with same-slice register load:      8
       Number with same-slice carry load:         0
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    31 out of   2,278    1%
+  Number of occupied Slices:                    32 out of   2,278    1%
   Number of MUXCYs used:                         0 out of   4,556    0%
-  Number of LUT Flip Flop pairs used:           93
-    Number with an unused Flip Flop:            33 out of      93   35%
-    Number with an unused LUT:                  53 out of      93   56%
-    Number of fully used LUT-FF pairs:           7 out of      93    7%
+  Number of LUT Flip Flop pairs used:           92
+    Number with an unused Flip Flop:            36 out of      92   39%
+    Number with an unused LUT:                  48 out of      92   52%
+    Number of fully used LUT-FF pairs:           8 out of      92    8%
     Number of unique control sets:               8
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
@@ -53,6 +53,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        36 out of     232   15%
+    Number of LOCed IOBs:                       15 out of      36   41%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -81,9 +82,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.01
 
-Peak Memory Usage:  416 MB
-Total REAL time to MAP completion:  7 secs 
-Total CPU time to MAP completion:   5 secs 
+Peak Memory Usage:  406 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   4 secs 
 
 Table of Contents
 -----------------
@@ -112,6 +113,45 @@ WARNING:Security:44 - Since no license file was found,
 WARNING:Security:42 - Your software subscription period has lapsed. Your current
 version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: input<7>
+   	 Comp: input<6>
+   	 Comp: input<5>
+   	 Comp: input<4>
+   	 Comp: input<3>
+   	 Comp: input<2>
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: wr<2>
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: rd1<2>
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: rd2<2>
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: out1<7>
+   	 Comp: out1<6>
+   	 Comp: out1<5>
+   	 Comp: out1<4>
+   	 Comp: out1<3>
+   	 Comp: out1<2>
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: out2<7>
+   	 Comp: out2<6>
+   	 Comp: out2<5>
+   	 Comp: out2<4>
+   	 Comp: out2<3>
+   	 Comp: out2<2>
+
 
 Section 3 - Informational
 -------------------------
@@ -131,6 +171,9 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 36 IOs, 15 are locked
+   and 21 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary

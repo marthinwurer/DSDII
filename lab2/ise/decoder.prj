@@ -1,2 +1,0 @@
-vhdl work "../src/so_eddgy.vhd"
-vhdl work "../src/decoder.vhd"

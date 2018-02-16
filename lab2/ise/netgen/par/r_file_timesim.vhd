@@ -7,7 +7,7 @@
 -- \   \   \/     Version: P.20131013
 --  \   \         Application: netgen
 --  /   /         Filename: r_file_timesim.vhd
--- /___/   /\     Timestamp: Thu Feb 15 18:51:28 2018
+-- /___/   /\     Timestamp: Thu Feb 15 19:18:23 2018
 -- \   \  /  \ 
 --  \___\/\___\
 --             
@@ -202,14 +202,14 @@ architecture Structure of r_file is
   signal mux1_Mmux_Y_37_309 : STD_LOGIC; 
   signal mux1_Mmux_Y_47_301 : STD_LOGIC; 
   signal out1_7_OBUF_300 : STD_LOGIC; 
-  signal input_4_IBUF_rt_337 : STD_LOGIC; 
   signal registers_4_reg_output_4_Q : STD_LOGIC; 
-  signal input_5_IBUF_rt_331 : STD_LOGIC; 
+  signal input_4_IBUF_rt_335 : STD_LOGIC; 
   signal registers_4_reg_output_5_Q : STD_LOGIC; 
+  signal input_5_IBUF_rt_329 : STD_LOGIC; 
   signal registers_4_reg_output_6_Q : STD_LOGIC; 
   signal input_6_IBUF_rt_326 : STD_LOGIC; 
-  signal input_7_IBUF_rt_320 : STD_LOGIC; 
   signal registers_4_reg_output_7_Q : STD_LOGIC; 
+  signal input_7_IBUF_rt_318 : STD_LOGIC; 
   signal mux2_Mmux_Y_31_359 : STD_LOGIC; 
   signal mux2_Mmux_Y_41_351 : STD_LOGIC; 
   signal out2_1_OBUF_350 : STD_LOGIC; 
@@ -1751,7 +1751,7 @@ begin
       ADR4 => '1',
       ADR3 => '1',
       ADR2 => input_7_IBUF_0,
-      O => input_7_IBUF_rt_320
+      O => input_7_IBUF_rt_318
     );
   registers_4_reg_output_7 : X_FF
     generic map(
@@ -1761,7 +1761,7 @@ begin
     port map (
       CE => reg_enable(4),
       CLK => NlwBufferSignal_registers_4_reg_output_7_CLK,
-      I => input_7_IBUF_rt_320,
+      I => input_7_IBUF_rt_318,
       O => registers_4_reg_output_7_Q,
       RST => rst_IBUF_0,
       SET => GND
@@ -1829,7 +1829,7 @@ begin
       ADR2 => '1',
       ADR4 => '1',
       ADR3 => input_5_IBUF_0,
-      O => input_5_IBUF_rt_331
+      O => input_5_IBUF_rt_329
     );
   registers_4_reg_output_5 : X_FF
     generic map(
@@ -1839,7 +1839,7 @@ begin
     port map (
       CE => reg_enable(4),
       CLK => NlwBufferSignal_registers_4_reg_output_5_CLK,
-      I => input_5_IBUF_rt_331,
+      I => input_5_IBUF_rt_329,
       O => registers_4_reg_output_5_Q,
       RST => rst_IBUF_0,
       SET => GND
@@ -1868,7 +1868,7 @@ begin
       ADR4 => '1',
       ADR3 => '1',
       ADR2 => input_4_IBUF_0,
-      O => input_4_IBUF_rt_337
+      O => input_4_IBUF_rt_335
     );
   registers_4_reg_output_4 : X_FF
     generic map(
@@ -1878,7 +1878,7 @@ begin
     port map (
       CE => reg_enable(4),
       CLK => NlwBufferSignal_registers_4_reg_output_4_CLK,
-      I => input_4_IBUF_rt_337,
+      I => input_4_IBUF_rt_335,
       O => registers_4_reg_output_4_Q,
       RST => rst_IBUF_0,
       SET => GND

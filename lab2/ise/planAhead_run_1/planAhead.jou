@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Feb 15 19:25:45 2018
+# Process ID: 9384
+# Log file: C:/Users/bhm3791/projects/DSDII/lab2/ise/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/bhm3791/projects/DSDII/lab2/ise/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/bhm3791/projects/DSDII/lab2/ise/pa.fromNetlist.tcl
+startgroup
+set_property package_pin T10 [get_ports {input[0]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {input[1]}]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports {out1[0]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {out1[1]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {out2[0]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {out2[1]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {rd1[0]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {rd1[1]}]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports {rd2[0]}]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports {rd2[1]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {wr[1]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {wr[0]}]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin D9 [get_ports we]
+endgroup
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin V10 [get_ports clk]
+endgroup
+save_constraints
