@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Feb 15 19:36:23 2018
+// Written by: Map P.20131013 on Thu Feb 15 19:53:19 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7,14 +7,21 @@ COMP "clk" LOCATE = SITE "V10" LEVEL 1;
 COMP "we" LOCATE = SITE "D9" LEVEL 1;
 COMP "out1<0>" LOCATE = SITE "U16" LEVEL 1;
 COMP "out1<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "out1<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "out1<3>" LOCATE = SITE "V15" LEVEL 1;
 COMP "out2<0>" LOCATE = SITE "M11" LEVEL 1;
 COMP "out2<1>" LOCATE = SITE "N11" LEVEL 1;
+COMP "out2<2>" LOCATE = SITE "R11" LEVEL 1;
+COMP "out2<3>" LOCATE = SITE "T11" LEVEL 1;
 COMP "rd1<0>" LOCATE = SITE "N8" LEVEL 1;
 COMP "rd1<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "rd1<2>" LOCATE = SITE "B8" LEVEL 1;
 COMP "wr<0>" LOCATE = SITE "V9" LEVEL 1;
 COMP "wr<1>" LOCATE = SITE "M8" LEVEL 1;
 COMP "rd2<0>" LOCATE = SITE "V8" LEVEL 1;
+COMP "wr<2>" LOCATE = SITE "A8" LEVEL 1;
 COMP "rd2<1>" LOCATE = SITE "T5" LEVEL 1;
+COMP "rd2<2>" LOCATE = SITE "C4" LEVEL 1;
 COMP "input<0>" LOCATE = SITE "T10" LEVEL 1;
 COMP "rst" LOCATE = SITE "C9" LEVEL 1;
 COMP "input<1>" LOCATE = SITE "T9" LEVEL 1;
