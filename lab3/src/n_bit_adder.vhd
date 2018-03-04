@@ -6,7 +6,7 @@ use work.so_eddgy.ALL;
 
 
 entity n_bit_adder is
-	generic (adder_width : integer)
+	generic (adder_width : integer);
 	port (
 		A, B : in std_logic_vector(adder_width-1 downto 0);
 		cin : in std_logic;

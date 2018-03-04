@@ -22,9 +22,11 @@ architecture behav of n_bit_multiplier is
 	end component;
 
 
-	signal and_out: array(n-1 downto 0) of std_logic_vector(n-1 downto 0);
-	signal fa_out: array(n-1 downto 0) of std_logic_vector(n downto 0);
-	signal fa_carries: array(n-1 downto 0) of std_logic_vector(n downto 0);
+	type n_minus is array(n-1 downto 0) of std_logic_vector(n-1 downto 0);
+	type n_full is array(n-1 downto 0) of std_logic_vector(n downto 0);
+	signal and_out: n_minus;
+	signal fa_out: n_full;
+	signal fa_carries: n_full;
 begin
 
 	-- BB is rows, aa is columns
@@ -34,7 +36,7 @@ begin
 		end generate ands2;
 	end generate ands1;
 	-- this lets us skip over the first row of full adders and be consistent
-	fa_out(0) <= and_out(0);
+	fa_out(0)(n-1 downto 0) <= and_out(0);
 
 	fas1: for bb in 1 to n-1 generate 
 		fas2: for aa in 0 to n-1 generate
@@ -49,6 +51,8 @@ begin
 	-- map last carry to last fa_out
 	carry_correct: for bb in 0 to n-1 generate 
 		fa_out(bb)(n) <= fa_carries(bb)(n);
+		-- zero the first carries
+		fa_carries(bb)(0) <= '0';
 		-- also start mapping output
 		P(bb) <= fa_out(bb)(0);
 	end generate carry_correct;

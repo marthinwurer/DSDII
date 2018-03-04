@@ -35,13 +35,13 @@ begin
 
 	lrs : entity work.nBitRightShift
 	generic map (n=>n, mode=>'0')
-	port map (A=>A, B=>B, Y=>shifts(0));
+	port map (A=>A, B=>B, Y=>shifts(1));
 
 	ars : entity work.nBitRightShift
 	generic map (n=>n, mode=>'1')
-	port map (A=>A, B=>B, Y=>shifts(0));
+	port map (A=>A, B=>B, Y=>shifts(2));
 
-	shifts(3) <= (others => '0')
+	shifts(3) <= (others => '0');
 
 	Y <= shifts(to_integer(unsigned(control)));
 
