@@ -14,36 +14,47 @@ entity n_bit_arithmetic_unit is
 	);
 end n_bit_arithmetic_unit;
 
-architecture behav of n_bit_shift_unit is
-	component nBitLeftShift
-	generic ( n : integer := 8) ;
-	port (A , B : in std_logic_vector (n -1 downto 0) ;
-			Y		: out std_logic_vector (n -1 downto 0) ) ;
+architecture behav of n_bit_arithmetic_unit is
+	component n_bit_adder
+	generic (adder_width : integer);
+	port (
+		A, B : in std_logic_vector(adder_width-1 downto 0);
+		cin : in std_logic;
+		S : out std_logic_vector(adder_width-1 downto 0);
+		cout: out std_logic
+	);
 	end component;
 
-	component nBitRightShift
-	generic ( n : integer := 8; mode: std_logic) ;
-	port (A , B : in std_logic_vector (n -1 downto 0) ;
-			Y		: out std_logic_vector (n -1 downto 0) ) ;
+	component n_bit_multiplier
+	generic ( n : integer);
+	port (
+		A, B: in std_logic_vector(n-1 downto 0);
+		P: out std_logic_vector((n*2)-1 downto 0)
+	);
 	end component;
 
-	signal shifts : dwn_array(3 downto 0);
+	type mux_array is array(3 downto 0) of std_logic_vector(n-1 downto 0);
+	signal comps : mux_array;
+	signal dummy_cout_a, dummy_cout_b: std_logic;
+	signal notb : std_logic_vector( n-1 downto 0);
 begin
-	lls : entity work.nBitLeftShift
-	generic map (n=>n)
-	port map (A=>A, B=>B, Y=>shifts(0));
+	adder : entity work.n_bit_adder
+	generic map (adder_width=>n)
+	port map (A=>A, B=>B, cin=>'0', S=>comps(0), cout=>dummy_cout_a);
 
-	lrs : entity work.nBitRightShift
-	generic map (n=>n, mode=>'0')
-	port map (A=>A, B=>B, Y=>shifts(1));
+	notb <= not B;
 
-	ars : entity work.nBitRightShift
-	generic map (n=>n, mode=>'1')
-	port map (A=>A, B=>B, Y=>shifts(2));
+	subtractor : entity work.n_bit_adder
+	generic map (adder_width=>n)
+	port map (A=>A, B=>notb, cin=>'1', S=>comps(1), cout=>dummy_cout_b);
 
-	shifts(3) <= (others => '0');
+	ars : entity work.n_bit_multiplier
+	generic map (n=>n/2)
+	port map (A=>A(n/2-1 downto 0), B=>B(n/2-1 downto 0), P=>comps(2));
 
-	Y <= shifts(to_integer(unsigned(control)));
+	comps(3) <= (others => '0');
+
+	F <= comps(to_integer(unsigned(control)));
 
 end behav;
 

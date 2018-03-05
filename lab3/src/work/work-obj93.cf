@@ -1,31 +1,40 @@
 v 4
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "f_adder.vhd" "8c21fb7d7c3b29e887278b0bb55159c9818b455d" "20180304000108.873":
-  entity f_adder at 2( 21) + 0 on 47;
-  architecture behav of f_adder at 15( 212) + 0 on 48;
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "logic_block.vhd" "2c2742a78b1dc446bafa077f13973e40aa8c01e0" "20180303220125.264":
-  entity logic_block at 2( 21) + 0 on 4;
-  architecture behav of logic_block at 16( 252) + 0 on 4;
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "n_bit_adder.vhd" "22f11a15dcbc25860a67e2b64c45beb6dc9cc8cd" "20180303220125.265":
-  entity n_bit_adder at 2( 21) + 0 on 4;
-  architecture behav of n_bit_adder at 18( 351) + 0 on 4;
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "nBitLeftShift.vhd" "4c8dd7a147ccb0aaff8c39cf27f61129a9b9dfbf" "20180303220125.266":
-  entity nbitleftshift at 20( 469) + 0 on 4;
-  architecture struct of nbitleftshift at 38( 1036) + 0 on 4;
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "n_bit_logic_unit.vhd" "03f1d7931b00c243608db4e8b5f5127aa06cd655" "20180303220125.267":
-  entity n_bit_logic_unit at 2( 21) + 0 on 4;
-  architecture behav of n_bit_logic_unit at 17( 329) + 0 on 4;
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "n_bit_multiplier.vhd" "cd4c03c981dd61e4014c52ae3729222d5e2cfbc9" "20180304000108.897":
-  entity n_bit_multiplier at 2( 21) + 0 on 49;
-  architecture behav of n_bit_multiplier at 16( 289) + 0 on 50;
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "nBitRightShift.vhd" "3c37776b85843f691d43c29fc3a01403c309ebd9" "20180303220125.268":
-  entity nbitrightshift at 20( 469) + 0 on 4;
-  architecture struct of nbitrightshift at 38( 1055) + 0 on 4;
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "n_bit_shift_unit.vhd" "4e7173bf6df8ff26b58fc025c22ea86d2f7741c0" "20180303220125.268":
-  entity n_bit_shift_unit at 2( 21) + 0 on 4;
-  architecture behav of n_bit_shift_unit at 17( 329) + 0 on 4;
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "so_eddgy.vhd" "8a572af3c4b0f83f71cdf43c81667130e16a3b92" "20180304000108.842":
-  package so_eddgy at 7( 228) + 0 on 45 body;
-  package body so_eddgy at 41( 1315) + 0 on 46;
-file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "ut_multiplier.vhd" "e91023be7b571be0cf81298c3d1de554bdc66aeb" "20180304000108.978":
-  entity ut_multiplier at 2( 81) + 0 on 51;
-  architecture behav of ut_multiplier at 12( 243) + 0 on 52;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "ut_multiplier.vhd" "97d25fc5748efe9f7c2971d19b52134888fc49b2" "20180305231724.884":
+  entity ut_multiplier at 2( 81) + 0 on 4;
+  architecture behav of ut_multiplier at 11( 238) + 0 on 4;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "ut_alu.vhd" "abbcf25ea89de6da62134b3c9a88668f5964b8e8" "20180305232018.751":
+  entity ut_alu at 2( 81) + 0 on 41;
+  architecture behav of ut_alu at 10( 204) + 0 on 42;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "so_eddgy.vhd" "8a572af3c4b0f83f71cdf43c81667130e16a3b92" "20180305231729.970":
+  package so_eddgy at 7( 228) + 0 on 11 body;
+  package body so_eddgy at 41( 1315) + 0 on 12;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "n_bit_shift_unit.vhd" "c5ccc25d6609e4c7736173fe7c6e783155557a02" "20180305231730.350":
+  entity n_bit_shift_unit at 2( 21) + 0 on 29;
+  architecture behav of n_bit_shift_unit at 17( 329) + 0 on 30;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "nBitRightShift.vhd" "3c37776b85843f691d43c29fc3a01403c309ebd9" "20180305231730.297":
+  entity nbitrightshift at 20( 469) + 0 on 27;
+  architecture struct of nbitrightshift at 38( 1055) + 0 on 28;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "n_bit_multiplier.vhd" "cd4c03c981dd61e4014c52ae3729222d5e2cfbc9" "20180305231730.054":
+  entity n_bit_multiplier at 2( 21) + 0 on 17;
+  architecture behav of n_bit_multiplier at 16( 289) + 0 on 18;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "n_bit_logic_unit.vhd" "03f1d7931b00c243608db4e8b5f5127aa06cd655" "20180305231730.227":
+  entity n_bit_logic_unit at 2( 21) + 0 on 23;
+  architecture behav of n_bit_logic_unit at 17( 329) + 0 on 24;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "nBitLeftShift.vhd" "4c8dd7a147ccb0aaff8c39cf27f61129a9b9dfbf" "20180305231730.251":
+  entity nbitleftshift at 20( 469) + 0 on 25;
+  architecture struct of nbitleftshift at 38( 1036) + 0 on 26;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "n_bit_arithmetic_unit.vhd" "be77675434543be1d36d9ffcd10c8737b1451883" "20180305231730.143":
+  entity n_bit_arithmetic_unit at 2( 21) + 0 on 19;
+  architecture behav of n_bit_arithmetic_unit at 17( 339) + 0 on 20;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "n_bit_adder.vhd" "22f11a15dcbc25860a67e2b64c45beb6dc9cc8cd" "20180305231730.021":
+  entity n_bit_adder at 2( 21) + 0 on 15;
+  architecture behav of n_bit_adder at 18( 351) + 0 on 16;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "logic_block.vhd" "2c2742a78b1dc446bafa077f13973e40aa8c01e0" "20180305231730.202":
+  entity logic_block at 2( 21) + 0 on 21;
+  architecture behav of logic_block at 16( 252) + 0 on 22;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "f_adder.vhd" "8c21fb7d7c3b29e887278b0bb55159c9818b455d" "20180305231729.999":
+  entity f_adder at 2( 21) + 0 on 13;
+  architecture behav of f_adder at 15( 212) + 0 on 14;
+file "/home/benjamin/Documents/notes/DSDII/lab3/src/" "alu.vhd" "2696cfd06cf12a09142972491c05931c74247b82" "20180305231904.582":
+  entity alu at 2( 21) + 0 on 35;
+  architecture behav of alu at 16( 294) + 0 on 36;

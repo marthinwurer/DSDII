@@ -27,7 +27,8 @@ architecture behav of n_bit_shift_unit is
 			Y		: out std_logic_vector (n -1 downto 0) ) ;
 	end component;
 
-	signal shifts : dwn_array(3 downto 0);
+	type mux_array is array(3 downto 0) of std_logic_vector(n-1 downto 0);
+	signal shifts : mux_array;
 begin
 	lls : entity work.nBitLeftShift
 	generic map (n=>n)
@@ -43,7 +44,7 @@ begin
 
 	shifts(3) <= (others => '0');
 
-	Y <= shifts(to_integer(unsigned(control)));
+	F <= shifts(to_integer(unsigned(control)));
 
 end behav;
 
