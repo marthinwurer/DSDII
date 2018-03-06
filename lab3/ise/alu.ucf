@@ -1,17 +1,6 @@
 
+# PlanAhead Generated physical constraints 
 
-NET "F[7]" LOC = T11;
-NET "F[6]" LOC = R11;
-NET "F[5]" LOC = N11;
-NET "F[4]" LOC = M11;
-NET "F[3]" LOC = V15;
-NET "F[2]" LOC = U15;
-NET "F[1]" LOC = V16;
-NET "F[0]" LOC = U16;
-NET "control[3]" LOC = C4;
-NET "control[2]" LOC = B8;
-NET "control[1]" LOC = D9;
-NET "control[0]" LOC = C9;
 NET "A[3]" LOC = T5;
 NET "A[2]" LOC = V8;
 NET "A[1]" LOC = U8;
@@ -20,5 +9,11 @@ NET "B[3]" LOC = M8;
 NET "B[2]" LOC = V9;
 NET "B[1]" LOC = T9;
 NET "B[0]" LOC = T10;
-
-
+NET "control[3]" LOC = C4;
+NET "control[2]" LOC = B8;
+NET "control[1]" LOC = D9;
+NET "control[0]" LOC = C9;
+NET "F[3]" LOC = V15;
+NET "F[2]" LOC = U15;
+NET "F[1]" LOC = V16;
+NET "F[0]" LOC = U16;

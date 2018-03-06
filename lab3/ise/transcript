@@ -8,19 +8,18 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# do {ut_alu.tdo} 
+# do {ut_multiplier.fdo} 
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim SE-64 vcom 10.1d Compiler 2012.11 Nov  1 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VCOMPONENTS
-# -- Loading package VITAL_Primitives
-# -- Loading package VPACKAGE
-# -- Compiling entity alu
-# -- Compiling architecture Structure of alu
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling package so_eddgy
+# -- Compiling package body so_eddgy
+# -- Loading package so_eddgy
 # Model Technology ModelSim SE-64 vcom 10.1d Compiler 2012.11 Nov  1 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -28,14 +27,29 @@
 # -- Loading package NUMERIC_STD
 # -- Loading package MATH_REAL
 # -- Loading package so_eddgy
-# -- Compiling entity ut_alu
-# -- Compiling architecture behav of ut_alu
-# -- Loading package VITAL_Timing
-# -- Loading package VCOMPONENTS
-# -- Loading package VITAL_Primitives
-# -- Loading package VPACKAGE
-# -- Loading entity alu
-# vsim -lib work -voptargs=\"+acc\" -sdfmax /alu1=netgen/par/alu_timesim.sdf -t 1ps work.ut_alu 
+# -- Compiling entity f_adder
+# -- Compiling architecture behav of f_adder
+# Model Technology ModelSim SE-64 vcom 10.1d Compiler 2012.11 Nov  1 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package so_eddgy
+# -- Compiling entity n_bit_multiplier
+# -- Compiling architecture behav of n_bit_multiplier
+# -- Loading entity f_adder
+# Model Technology ModelSim SE-64 vcom 10.1d Compiler 2012.11 Nov  1 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package so_eddgy
+# -- Compiling entity ut_multiplier
+# -- Compiling architecture behav of ut_multiplier
+# -- Loading entity n_bit_multiplier
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.ut_multiplier 
 # ** Note: (vsim-3812) Design is being optimized...
 # 
 # Loading std.standard
@@ -44,24 +58,31 @@
 # Loading ieee.numeric_std(body)
 # Loading ieee.math_real(body)
 # Loading work.so_eddgy(body)
-# Loading vital2000.vital_timing(body)
-# Loading simprim.vcomponents
-# Loading vital2000.vital_primitives(body)
-# Loading simprim.vpackage(body)
-# Loading work.ut_alu(behav)#1
-# Loading work.alu(structure)#1
-# Loading simprim.x_buf(x_buf_v)#1
-# Loading simprim.x_obuf(x_obuf_v)#1
-# Loading simprim.x_mux2(x_mux2_v)#1
-# Loading simprim.x_lut6(x_lut6_v)#1
-# Loading simprim.x_lut5(x_lut5_v)#1
-# Loading simprim.x_roc(x_roc_v)#1
-# Loading simprim.x_toc(x_toc_v)#1
-# Loading instances from netgen/par/alu_timesim.sdf
-# Loading timing data from netgen/par/alu_timesim.sdf
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /ut_alu File: ../src/ut_alu.vhd
+# Loading work.ut_multiplier(behav)#1
+# Loading work.n_bit_multiplier(behav)#1
+# Loading work.f_adder(behav)#1
+# ** Error: (vsim-7) Failed to open VHDL file "products.txt" in rb mode.
+# 
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /ut_multiplier
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: bhm3791  Hostname: FSL-23  ProcessID: 2336
+# 
+#           Attempting to use alternate WLF file "./wlftqqzhfx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftqqzhfx
+# 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-run -all
+# ** Fatal: (vsim-7) Failed to open VHDL file "products.txt" in rb mode.
+# 
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Process: /ut_multiplier/line__27 File: ut_multiplier.vhd
+# Fatal error in Process line__27 at ut_multiplier.vhd line 34
+# 
+# HDL call sequence:
+# Stopped at ut_multiplier.vhd 34 Process line__27
+# 

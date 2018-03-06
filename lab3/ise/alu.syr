@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: alu.prj
 
@@ -105,37 +105,37 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\so_eddgy.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\so_eddgy.vhd" into library work
 Parsing package <so_eddgy>.
 Parsing package body <so_eddgy>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\f_adder.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\f_adder.vhd" into library work
 Parsing entity <f_adder>.
 Parsing architecture <behav> of entity <f_adder>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_multiplier.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_multiplier.vhd" into library work
 Parsing entity <n_bit_multiplier>.
 Parsing architecture <behav> of entity <n_bit_multiplier>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_adder.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_adder.vhd" into library work
 Parsing entity <n_bit_adder>.
 Parsing architecture <behav> of entity <n_bit_adder>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\nBitRightShift.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitRightShift.vhd" into library work
 Parsing entity <nBitRightShift>.
 Parsing architecture <struct> of entity <nbitrightshift>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\nBitLeftShift.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitLeftShift.vhd" into library work
 Parsing entity <nBitLeftShift>.
 Parsing architecture <struct> of entity <nbitleftshift>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\logic_block.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\logic_block.vhd" into library work
 Parsing entity <logic_block>.
 Parsing architecture <behav> of entity <logic_block>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_shift_unit.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_shift_unit.vhd" into library work
 Parsing entity <n_bit_shift_unit>.
 Parsing architecture <behav> of entity <n_bit_shift_unit>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_logic_unit.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_logic_unit.vhd" into library work
 Parsing entity <n_bit_logic_unit>.
 Parsing architecture <behav> of entity <n_bit_logic_unit>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_arithmetic_unit.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_arithmetic_unit.vhd" into library work
 Parsing entity <n_bit_arithmetic_unit>.
 Parsing architecture <behav> of entity <n_bit_arithmetic_unit>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\src\alu.vhd" into library work
+Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\alu.vhd" into library work
 Parsing entity <alu>.
 Parsing architecture <behav> of entity <alu>.
 
@@ -170,88 +170,88 @@ Elaborating entity <nBitRightShift> (architecture <struct>) with generics from l
 =========================================================================
 
 Synthesizing Unit <alu>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\alu.vhd".
-    Found 8-bit 4-to-1 multiplexer for signal <F> created at line 63.
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\alu.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <F> created at line 63.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <alu> synthesized.
 
 Synthesizing Unit <n_bit_arithmetic_unit>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_arithmetic_unit.vhd".
-        n = 8
-INFO:Xst:3210 - "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_arithmetic_unit.vhd" line 41: Output port <cout> of the instance <adder> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_arithmetic_unit.vhd" line 47: Output port <cout> of the instance <subtractor> is unconnected or connected to loadless signal.
-    Found 8-bit 4-to-1 multiplexer for signal <F> created at line 57.
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_arithmetic_unit.vhd".
+        n = 4
+INFO:Xst:3210 - "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_arithmetic_unit.vhd" line 41: Output port <cout> of the instance <adder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_arithmetic_unit.vhd" line 47: Output port <cout> of the instance <subtractor> is unconnected or connected to loadless signal.
+    Found 4-bit 4-to-1 multiplexer for signal <F> created at line 57.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <n_bit_arithmetic_unit> synthesized.
 
 Synthesizing Unit <n_bit_adder>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_adder.vhd".
-        adder_width = 8
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_adder.vhd".
+        adder_width = 4
     Summary:
 	no macro.
 Unit <n_bit_adder> synthesized.
 
 Synthesizing Unit <f_adder>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\f_adder.vhd".
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\f_adder.vhd".
     Summary:
 Unit <f_adder> synthesized.
 
 Synthesizing Unit <n_bit_multiplier>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_multiplier.vhd".
-        n = 4
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_multiplier.vhd".
+        n = 2
     Summary:
 	no macro.
 Unit <n_bit_multiplier> synthesized.
 
 Synthesizing Unit <n_bit_logic_unit>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_logic_unit.vhd".
-        n = 8
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_logic_unit.vhd".
+        n = 4
     Summary:
 	no macro.
 Unit <n_bit_logic_unit> synthesized.
 
 Synthesizing Unit <logic_block>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\logic_block.vhd".
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\logic_block.vhd".
     Found 1-bit 4-to-1 multiplexer for signal <F> created at line 12.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <logic_block> synthesized.
 
 Synthesizing Unit <n_bit_shift_unit>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\n_bit_shift_unit.vhd".
-        n = 8
-    Found 8-bit 4-to-1 multiplexer for signal <F> created at line 47.
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_shift_unit.vhd".
+        n = 4
+    Found 4-bit 4-to-1 multiplexer for signal <F> created at line 47.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <n_bit_shift_unit> synthesized.
 
 Synthesizing Unit <nBitLeftShift>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\nBitLeftShift.vhd".
-        n = 8
-WARNING:Xst:647 - Input <B<7:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 8-bit 8-to-1 multiplexer for signal <Y> created at line 53.
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitLeftShift.vhd".
+        n = 4
+WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit 4-to-1 multiplexer for signal <Y> created at line 53.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <nBitLeftShift> synthesized.
 
 Synthesizing Unit <nBitRightShift_1>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\nBitRightShift.vhd".
-        n = 8
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitRightShift.vhd".
+        n = 4
         mode = '0'
-WARNING:Xst:647 - Input <B<7:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 8-bit 8-to-1 multiplexer for signal <Y> created at line 55.
+WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit 4-to-1 multiplexer for signal <Y> created at line 55.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <nBitRightShift_1> synthesized.
 
 Synthesizing Unit <nBitRightShift_2>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\src\nBitRightShift.vhd".
-        n = 8
+    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitRightShift.vhd".
+        n = 4
         mode = '1'
-WARNING:Xst:647 - Input <B<7:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 8-bit 8-to-1 multiplexer for signal <Y> created at line 55.
+WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit 4-to-1 multiplexer for signal <Y> created at line 55.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <nBitRightShift_2> synthesized.
@@ -260,12 +260,11 @@ Unit <nBitRightShift_2> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Multiplexers                                         : 14
- 1-bit 4-to-1 multiplexer                              : 8
- 8-bit 4-to-1 multiplexer                              : 3
- 8-bit 8-to-1 multiplexer                              : 3
-# Xors                                                 : 64
- 1-bit xor2                                            : 64
+# Multiplexers                                         : 10
+ 1-bit 4-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 6
+# Xors                                                 : 24
+ 1-bit xor2                                            : 24
 
 =========================================================================
 
@@ -278,12 +277,11 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Multiplexers                                         : 14
- 1-bit 4-to-1 multiplexer                              : 8
- 8-bit 4-to-1 multiplexer                              : 3
- 8-bit 8-to-1 multiplexer                              : 3
-# Xors                                                 : 64
- 1-bit xor2                                            : 64
+# Multiplexers                                         : 10
+ 1-bit 4-to-1 multiplexer                              : 4
+ 4-bit 4-to-1 multiplexer                              : 6
+# Xors                                                 : 24
+ 1-bit xor2                                            : 24
 
 =========================================================================
 
@@ -293,13 +291,9 @@ Macro Statistics
 
 Optimizing unit <alu> ...
 
-Optimizing unit <n_bit_adder> ...
-
-Optimizing unit <n_bit_multiplier> ...
-
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block alu, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block alu, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -328,16 +322,16 @@ Top Level Output File Name         : alu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 113
-#      LUT2                        : 2
-#      LUT3                        : 7
-#      LUT4                        : 22
-#      LUT5                        : 31
-#      LUT6                        : 41
-#      MUXF7                       : 10
-# IO Buffers                       : 28
-#      IBUF                        : 20
-#      OBUF                        : 8
+# BELS                             : 31
+#      LUT2                        : 1
+#      LUT3                        : 2
+#      LUT4                        : 6
+#      LUT5                        : 6
+#      LUT6                        : 15
+#      MUXF7                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 12
+#      OBUF                        : 4
 
 Device utilization summary:
 ---------------------------
@@ -346,19 +340,19 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                  103  out of   9112     1%  
-    Number used as Logic:               103  out of   9112     1%  
+ Number of Slice LUTs:                   30  out of   9112     0%  
+    Number used as Logic:                30  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    103
-   Number with an unused Flip Flop:     103  out of    103   100%  
-   Number with an unused LUT:             0  out of    103     0%  
-   Number of fully used LUT-FF pairs:     0  out of    103     0%  
+ Number of LUT Flip Flop pairs used:     30
+   Number with an unused Flip Flop:      30  out of     30   100%  
+   Number with an unused LUT:             0  out of     30     0%  
+   Number of fully used LUT-FF pairs:     0  out of     30     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                          28
- Number of bonded IOBs:                  28  out of    232    12%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    232     6%  
 
 Specific Feature Utilization:
 
@@ -393,7 +387,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 12.747ns
+   Maximum combinational path delay: 8.794ns
 
 Timing Details:
 ---------------
@@ -401,29 +395,25 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 921 / 8
+  Total number of paths / destination ports: 138 / 4
 -------------------------------------------------------------------------
-Delay:               12.747ns (Levels of Logic = 10)
-  Source:            B<0> (PAD)
-  Destination:       F<7> (PAD)
+Delay:               8.794ns (Levels of Logic = 6)
+  Source:            B<1> (PAD)
+  Destination:       F<3> (PAD)
 
-  Data Path: B<0> to F<7>
+  Data Path: B<1> to F<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            42   1.222   1.662  B_0_IBUF (B_0_IBUF)
-     LUT4:I1->O            3   0.205   0.879  arithmetic/ars/fas1[1].fas2[0].fa/A_B_AND_2_o1 (arithmetic/ars/fa_carries<1><1>)
-     LUT6:I3->O            4   0.205   0.788  arithmetic/ars/fas1[2].fas2[0].fa/A_B_AND_2_o1 (arithmetic/ars/fa_carries<2><1>)
-     LUT6:I4->O            4   0.203   0.684  arithmetic/ars/fas1[2].fas2[2].fa/cout1 (arithmetic/ars/fa_carries<2><3>)
-     LUT4:I3->O            2   0.205   0.617  arithmetic/ars/fas1[2].fas2[3].fa/Mxor_S_xo<0>1 (arithmetic/ars/fa_out<2><3>)
-     LUT6:I5->O            2   0.205   0.617  arithmetic/ars/fas1[3].fas2[2].fa/cout1 (arithmetic/ars/fa_carries<3><3>)
-     LUT6:I5->O            1   0.205   0.808  control<3>74 (control<3>73)
-     LUT5:I2->O            1   0.205   0.684  control<3>75 (control<3>74)
-     LUT4:I2->O            1   0.203   0.579  control<3>76 (F_7_OBUF)
-     OBUF:I->O                 2.571          F_7_OBUF (F<7>)
+     IBUF:I->O            16   1.222   1.233  B_1_IBUF (B_1_IBUF)
+     LUT4:I1->O            1   0.205   0.684  arithmetic/subtractor/ripple[1].adder/cout1 (arithmetic/subtractor/carries<2>)
+     LUT5:I3->O            2   0.203   0.864  Mmux_F112 (Mmux_F112)
+     LUT6:I2->O            1   0.203   0.827  Mmux_F118 (Mmux_F117)
+     LUT6:I2->O            1   0.203   0.579  Mmux_F119 (F_3_OBUF)
+     OBUF:I->O                 2.571          F_3_OBUF (F<3>)
     ----------------------------------------
-    Total                     12.747ns (5.429ns logic, 7.318ns route)
-                                       (42.6% logic, 57.4% route)
+    Total                      8.794ns (4.607ns logic, 4.187ns route)
+                                       (52.4% logic, 47.6% route)
 
 =========================================================================
 
@@ -433,12 +423,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.86 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.01 secs
  
 --> 
 
-Total memory usage is 258872 kilobytes
+Total memory usage is 257188 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    3 (   0 filtered)
