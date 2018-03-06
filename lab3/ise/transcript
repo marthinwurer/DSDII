@@ -1,0 +1,67 @@
+# Reading C:/MentorGraphics/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1d Nov  1 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {ut_alu.tdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vcom 10.1d Compiler 2012.11 Nov  1 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VCOMPONENTS
+# -- Loading package VITAL_Primitives
+# -- Loading package VPACKAGE
+# -- Compiling entity alu
+# -- Compiling architecture Structure of alu
+# Model Technology ModelSim SE-64 vcom 10.1d Compiler 2012.11 Nov  1 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package so_eddgy
+# -- Compiling entity ut_alu
+# -- Compiling architecture behav of ut_alu
+# -- Loading package VITAL_Timing
+# -- Loading package VCOMPONENTS
+# -- Loading package VITAL_Primitives
+# -- Loading package VPACKAGE
+# -- Loading entity alu
+# vsim -lib work -voptargs=\"+acc\" -sdfmax /alu1=netgen/par/alu_timesim.sdf -t 1ps work.ut_alu 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.so_eddgy(body)
+# Loading vital2000.vital_timing(body)
+# Loading simprim.vcomponents
+# Loading vital2000.vital_primitives(body)
+# Loading simprim.vpackage(body)
+# Loading work.ut_alu(behav)#1
+# Loading work.alu(structure)#1
+# Loading simprim.x_buf(x_buf_v)#1
+# Loading simprim.x_obuf(x_obuf_v)#1
+# Loading simprim.x_mux2(x_mux2_v)#1
+# Loading simprim.x_lut6(x_lut6_v)#1
+# Loading simprim.x_lut5(x_lut5_v)#1
+# Loading simprim.x_roc(x_roc_v)#1
+# Loading simprim.x_toc(x_toc_v)#1
+# Loading instances from netgen/par/alu_timesim.sdf
+# Loading timing data from netgen/par/alu_timesim.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /ut_alu File: ../src/ut_alu.vhd
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+run -all
