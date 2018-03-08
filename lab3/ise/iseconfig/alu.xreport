@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-03-06T16:59:03</DateModified>
+  <DateModified>2018-03-08T17:11:16</DateModified>
   <ModuleName>alu</ModuleName>
-  <SummaryTimeStamp>2018-03-06T16:55:49</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/bhm3791/Documents/DSDII/lab3/ise/iseconfig/alu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/bhm3791/Documents/DSDII/lab3/ise</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2018-03-08T17:11:10</SummaryTimeStamp>
+  <SavedFilePath>/home/benjamin/Documents/notes/DSDII/lab3/ise/iseconfig/alu.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/benjamin/Documents/notes/DSDII/lab3/ise/</ImplementationReportsDirectory>
   <DateInitialized>2018-03-06T16:36:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
@@ -19,7 +19,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="alu_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="alu_map.xrpt" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="alu_map.xrpt" showConstraints="0" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="alu_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="alu_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="alu.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />

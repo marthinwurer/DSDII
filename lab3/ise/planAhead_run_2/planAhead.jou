@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue Mar  6 17:04:06 2018
+# Process ID: 29264
+# Log file: /home/benjamin/Documents/notes/DSDII/lab3/ise/planAhead_run_2/planAhead.log
+# Journal file: /home/benjamin/Documents/notes/DSDII/lab3/ise/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/benjamin/Documents/notes/DSDII/lab3/ise/pa.fromNetlist.tcl

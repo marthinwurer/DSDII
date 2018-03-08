@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\bhm3791\Documents\DSDII\lab3\ise\alu.ncd
-OUTFILE=C:\Users\bhm3791\Documents\DSDII\lab3\ise\alu.bit
+INFILE=/home/benjamin/Documents/notes/DSDII/lab3/ise/alu.ncd
+OUTFILE=/home/benjamin/Documents/notes/DSDII/lab3/ise/alu.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\bhm3791\Documents\DSDII\lab3\ise
-LICENSE=ISE
-USER_INFO=174230485_174670005_210648960_720
+WORKINGDIR=/home/benjamin/Documents/notes/DSDII/lab3/ise
+LICENSE=WebPack
+USER_INFO=211470492_0_0_878

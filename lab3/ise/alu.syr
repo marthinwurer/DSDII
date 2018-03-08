@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
---> Reading design: alu.prj
+--> 
+Reading design: alu.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -105,37 +108,37 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\so_eddgy.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/so_eddgy.vhd" into library work
 Parsing package <so_eddgy>.
 Parsing package body <so_eddgy>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\f_adder.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/f_adder.vhd" into library work
 Parsing entity <f_adder>.
 Parsing architecture <behav> of entity <f_adder>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_multiplier.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_multiplier.vhd" into library work
 Parsing entity <n_bit_multiplier>.
 Parsing architecture <behav> of entity <n_bit_multiplier>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_adder.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_adder.vhd" into library work
 Parsing entity <n_bit_adder>.
 Parsing architecture <behav> of entity <n_bit_adder>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitRightShift.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/nBitRightShift.vhd" into library work
 Parsing entity <nBitRightShift>.
 Parsing architecture <struct> of entity <nbitrightshift>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitLeftShift.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/nBitLeftShift.vhd" into library work
 Parsing entity <nBitLeftShift>.
 Parsing architecture <struct> of entity <nbitleftshift>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\logic_block.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/logic_block.vhd" into library work
 Parsing entity <logic_block>.
 Parsing architecture <behav> of entity <logic_block>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_shift_unit.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_shift_unit.vhd" into library work
 Parsing entity <n_bit_shift_unit>.
 Parsing architecture <behav> of entity <n_bit_shift_unit>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_logic_unit.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_logic_unit.vhd" into library work
 Parsing entity <n_bit_logic_unit>.
 Parsing architecture <behav> of entity <n_bit_logic_unit>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_arithmetic_unit.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_arithmetic_unit.vhd" into library work
 Parsing entity <n_bit_arithmetic_unit>.
 Parsing architecture <behav> of entity <n_bit_arithmetic_unit>.
-Parsing VHDL file "C:\Users\bhm3791\Documents\DSDII\lab3\ise\alu.vhd" into library work
+Parsing VHDL file "/home/benjamin/Documents/notes/DSDII/lab3/ise/alu.vhd" into library work
 Parsing entity <alu>.
 Parsing architecture <behav> of entity <alu>.
 
@@ -170,57 +173,57 @@ Elaborating entity <nBitRightShift> (architecture <struct>) with generics from l
 =========================================================================
 
 Synthesizing Unit <alu>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\alu.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/alu.vhd".
     Found 4-bit 4-to-1 multiplexer for signal <F> created at line 63.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <alu> synthesized.
 
 Synthesizing Unit <n_bit_arithmetic_unit>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_arithmetic_unit.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_arithmetic_unit.vhd".
         n = 4
-INFO:Xst:3210 - "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_arithmetic_unit.vhd" line 41: Output port <cout> of the instance <adder> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_arithmetic_unit.vhd" line 47: Output port <cout> of the instance <subtractor> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_arithmetic_unit.vhd" line 41: Output port <cout> of the instance <adder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_arithmetic_unit.vhd" line 47: Output port <cout> of the instance <subtractor> is unconnected or connected to loadless signal.
     Found 4-bit 4-to-1 multiplexer for signal <F> created at line 57.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <n_bit_arithmetic_unit> synthesized.
 
 Synthesizing Unit <n_bit_adder>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_adder.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_adder.vhd".
         adder_width = 4
     Summary:
 	no macro.
 Unit <n_bit_adder> synthesized.
 
 Synthesizing Unit <f_adder>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\f_adder.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/f_adder.vhd".
     Summary:
 Unit <f_adder> synthesized.
 
 Synthesizing Unit <n_bit_multiplier>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_multiplier.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_multiplier.vhd".
         n = 2
     Summary:
 	no macro.
 Unit <n_bit_multiplier> synthesized.
 
 Synthesizing Unit <n_bit_logic_unit>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_logic_unit.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_logic_unit.vhd".
         n = 4
     Summary:
 	no macro.
 Unit <n_bit_logic_unit> synthesized.
 
 Synthesizing Unit <logic_block>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\logic_block.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/logic_block.vhd".
     Found 1-bit 4-to-1 multiplexer for signal <F> created at line 12.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <logic_block> synthesized.
 
 Synthesizing Unit <n_bit_shift_unit>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\n_bit_shift_unit.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/n_bit_shift_unit.vhd".
         n = 4
     Found 4-bit 4-to-1 multiplexer for signal <F> created at line 47.
     Summary:
@@ -228,7 +231,7 @@ Synthesizing Unit <n_bit_shift_unit>.
 Unit <n_bit_shift_unit> synthesized.
 
 Synthesizing Unit <nBitLeftShift>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitLeftShift.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/nBitLeftShift.vhd".
         n = 4
 WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit 4-to-1 multiplexer for signal <Y> created at line 53.
@@ -237,7 +240,7 @@ WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and 
 Unit <nBitLeftShift> synthesized.
 
 Synthesizing Unit <nBitRightShift_1>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitRightShift.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/nBitRightShift.vhd".
         n = 4
         mode = '0'
 WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -247,7 +250,7 @@ WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and 
 Unit <nBitRightShift_1> synthesized.
 
 Synthesizing Unit <nBitRightShift_2>.
-    Related source file is "C:\Users\bhm3791\Documents\DSDII\lab3\ise\nBitRightShift.vhd".
+    Related source file is "/home/benjamin/Documents/notes/DSDII/lab3/ise/nBitRightShift.vhd".
         n = 4
         mode = '1'
 WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -423,12 +426,13 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.01 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 5.88 secs
  
 --> 
 
-Total memory usage is 257188 kilobytes
+
+Total memory usage is 381476 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    3 (   0 filtered)
