@@ -1,19 +1,19 @@
 v 4
-file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "bin_bcd.vhd" "4946f1fc7bf58eb0cac9ce5070aa84a666706d02" "20180329032419.023":
-  package bin_bcd at 10( 235) + 0 on 15 body;
-  package body bin_bcd at 22( 465) + 0 on 16;
-file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "coin_rx.vhd" "ad7cceaaf763f97c71a1f444024d77c65a6040a8" "20180329032419.110":
-  entity coin_rx at 23( 748) + 0 on 19;
-  architecture behavioral of coin_rx at 44( 1354) + 0 on 20;
-file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "seven_seg_disp.vhd" "29c965c64df4750efce264ad29785cfdd0b363b8" "20180329032419.168":
-  entity seven_seg_disp at 23( 840) + 0 on 21;
-  architecture behavioral of seven_seg_disp at 41( 1621) + 0 on 22;
-file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "Usr_interaction.vhd" "6cd765ad20f871123809a679e891807685fb098b" "20180329032353.451":
-  entity usr_interaction at 21( 716) + 0 on 11;
-  architecture behavioral of usr_interaction at 58( 2403) + 0 on 12;
+file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "vending_machine_controller.vhd" "cab066b177be123d7b729eed660c5734f3091881" "20180329054024.616":
+  entity vending_machine_controller at 2( 21) + 0 on 81;
+  architecture gaisler of vending_machine_controller at 24( 747) + 0 on 82;
 file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "ut_vm.vhd" "755ea5972f265904c298866470bd576cdbdd77e5" "20180329050541.352":
   entity ut_vm at 2( 81) + 0 on 75;
   architecture behav of ut_vm at 9( 179) + 0 on 76;
-file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "vending_machine_controller.vhd" "178f89cbb759497598a2f6eac2dd4f67087b0495" "20180329045208.592":
-  entity vending_machine_controller at 2( 21) + 0 on 65;
-  architecture gaisler of vending_machine_controller at 24( 747) + 0 on 66;
+file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "Usr_interaction.vhd" "6cd765ad20f871123809a679e891807685fb098b" "20180329032353.451":
+  entity usr_interaction at 21( 716) + 0 on 11;
+  architecture behavioral of usr_interaction at 58( 2403) + 0 on 12;
+file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "seven_seg_disp.vhd" "29c965c64df4750efce264ad29785cfdd0b363b8" "20180329032419.168":
+  entity seven_seg_disp at 23( 840) + 0 on 21;
+  architecture behavioral of seven_seg_disp at 41( 1621) + 0 on 22;
+file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "coin_rx.vhd" "ad7cceaaf763f97c71a1f444024d77c65a6040a8" "20180329032419.110":
+  entity coin_rx at 23( 748) + 0 on 19;
+  architecture behavioral of coin_rx at 44( 1354) + 0 on 20;
+file "/home/benjamin/Documents/notes/DSDII/lab4/src/" "bin_bcd.vhd" "4946f1fc7bf58eb0cac9ce5070aa84a666706d02" "20180329032419.023":
+  package bin_bcd at 10( 235) + 0 on 15 body;
+  package body bin_bcd at 22( 465) + 0 on 16;

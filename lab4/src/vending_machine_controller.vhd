@@ -34,7 +34,7 @@ architecture gaisler of vending_machine_controller is
 	constant prices : u_arr(0 to 15) :=
 	(55, 85, 95, 125, 135, 150, 225, 250, 300, 0, 0, 0, 0, 0, 0, 0);
 	subtype sseg is std_logic_vector(6 downto 0);
-	type ssega is array(15 downto 0) of sseg;
+	type ssega is array(0 to 15) of sseg;
 	signal bbcd : std_logic_vector(23 downto 0);
 	signal mix : std_logic_vector(11 downto 0);
 	-- debug sigs
@@ -42,22 +42,38 @@ architecture gaisler of vending_machine_controller is
 
 
 	constant ssegdisp : ssega := (
-		"1111110",
-		"0110000",
-		"1101101",
-		"1111001",
-		"0110011",
-		"1011011",
-		"1011111",
-		"1110000",
-		"1111111",
-		"1111011",
-		"1110111",
-		"0011111",
-		"1001110",
-		"0111101",
+		"0000001",
 		"1001111",
-		"1000111");
+		"0010010",
+		"0000110",
+		"1001100",
+		"0100100",
+		"0100000",
+		"0001111",
+		"0000000",
+		"0000100",
+		"0001000",
+		"1100000",
+		"0110001",
+		"1000010",
+		"0110000",
+		"0111000");
+--		"1111110",
+--		"0110000",
+--		"1101101",
+--		"1111001",
+--		"0110011",
+--		"1011011",
+--		"1011111",
+--		"1110000",
+--		"1111111",
+--		"1111011",
+--		"1110111",
+--		"0011111",
+--		"1001110",
+--		"0111101",
+--		"1001111",
+--		"1000111");
 begin
 	gaisler: process (current_state, Qp, Dp, Np, Soda_price, Soda_req) is
 		variable n : state;
@@ -101,8 +117,6 @@ begin
 					-- make sure there's enough money
 					if n.money >= current_price then 
 						n.money := n.money - current_price;
-						report integer'image(n.money);
-						report integer'image(current_price);
 						n.drop := '1';
 					else
 						n.err := '1';
@@ -125,8 +139,11 @@ begin
 		Drop_soda <= current_state.drop;
 		Amt_err <= current_state.err;
 		--bcd := Bin_to_BCD(std_logic_vector(to_unsigned(current_state.money, 12)));
-		report integer'image(current_state.money);
-		mix <= std_logic_vector(to_signed(current_state.money, mix'length));
+		mix <= Bin_to_BCD(std_logic_vector(to_signed(current_state.money, mix'length)));
+		hund_disp_n <= ssegdisp(to_integer(unsigned(mix(11 downto 8))));
+		tens_disp_n <= ssegdisp(to_integer(unsigned(mix(7 downto 4))));
+		ones_disp_n <= ssegdisp(to_integer(unsigned(mix(3 downto 0))));
+		
 		--bbcd <= Bin_to_BCD(std_logic_vector(to_unsigned(current_state.money, 12)));
 
 	end process;

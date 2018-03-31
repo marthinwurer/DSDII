@@ -1,0 +1,31 @@
+Command line:
+   ut_vm_isim_par.exe
+     -simmode  gui
+     -sdfmax  /vm/=netgen/par/Usr_interaction_timesim.sdf
+     -sdfroot  /vm
+     -simrunnum  0
+     -socket  58389
+
+Thu Mar 29 18:06:57 2018
+
+
+ Elaboration Time: 0.19 sec
+
+ Current Memory Usage: 245.531 Meg
+
+ Total Signals          : 14140
+ Total Nets             : 9723
+ Total Signal Drivers   : 7335
+ Total Blocks           : 2455
+ Total Primitive Blocks : 1409
+ Total Processes        : 7287
+ Total Traceable Variables  : 15913
+ Total Scalar Nets and Variables : 111276
+Total Line Count : 16675
+
+ Total Simulation Time: 477.33 sec
+
+ Current Memory Usage: 321.786 Meg
+
+Thu Mar 29 19:32:34 2018
+

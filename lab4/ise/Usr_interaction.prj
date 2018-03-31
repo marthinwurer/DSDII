@@ -1,0 +1,5 @@
+vhdl work "../src/bin_bcd.vhd"
+vhdl work "../src/vending_machine_controller.vhd"
+vhdl work "../src/seven_seg_disp.vhd"
+vhdl work "../src/coin_rx.vhd"
+vhdl work "../src/Usr_interaction.vhd"

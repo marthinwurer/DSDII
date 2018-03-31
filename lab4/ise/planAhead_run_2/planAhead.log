@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Mar 29 01:28:22 2018
+# Process ID: 21736
+# Log file: /home/benjamin/Documents/notes/DSDII/lab4/ise/planAhead_run_2/planAhead.log
+# Journal file: /home/benjamin/Documents/notes/DSDII/lab4/ise/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/benjamin/Documents/notes/DSDII/lab4/ise/pa.fromNetlist.tcl
+# create_project -name ise -dir "/home/benjamin/Documents/notes/DSDII/lab4/ise/planAhead_run_2" -part xc6slx16csg324-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/benjamin/Documents/notes/DSDII/lab4/ise/Usr_interaction.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/benjamin/Documents/notes/DSDII/lab4/ise} }
+# set_property target_constrs_file "Usr_interaction.ucf" [current_fileset -constrset]
+Adding file '/home/benjamin/Documents/notes/DSDII/lab4/ise/Usr_interaction.ucf' to fileset 'constrs_1'
+# add_files [list {Usr_interaction.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Usr_interaction.ngc ...
+WARNING:NetListWriters:298 - No output is written to Usr_interaction.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   instance0_vending_machine_controller/Madd_current_state_money[31]_GND_8_o_add
+   _5_OUT_lut<2 : 0> on block Usr_interaction is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   instance0_vending_machine_controller/Madd_current_state_money[31]_GND_8_o_add
+   _3_OUT_lut<3 : 1> on block Usr_interaction is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   instance0_vending_machine_controller/Madd_current_state_money[31]_GND_8_o_add
+   _1_OUT_lut<4 : 0> on block Usr_interaction is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   instance0_vending_machine_controller/n0065<30 : 0> on block Usr_interaction
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file Usr_interaction.edif ...
+ngc2edif: Total memory usage is 105000 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/ise.data/cache/Usr_interaction_ngc_8d7138b5.edif]
+Finished Parsing EDIF File [./planAhead_run_2/ise.data/cache/Usr_interaction_ngc_8d7138b5.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/benjamin/Documents/notes/DSDII/lab4/ise/Usr_interaction.ucf]
+Finished Parsing UCF File [/home/benjamin/Documents/notes/DSDII/lab4/ise/Usr_interaction.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 84a924d7
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2919.234 ; gain = 174.719
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See /home/benjamin/Documents/notes/DSDII/lab4/ise/planAhead_pid21736.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Mar 29 01:29:08 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

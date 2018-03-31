@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/benjamin/Documents/notes/DSDII/lab4/ise/ut_vm_isim_beh.exe" -prj "/home/benjamin/Documents/notes/DSDII/lab4/ise/ut_vm_beh.prj" "work.ut_vm" 
